@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Templates</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:wght@800&display=swap');
+
+        .padding_rt a {
+            padding-right: 30px !important;
+            padding-left: 30px !important;
+            font-family: 'DM Sans', sans-serif;
+            color: #212937;
+            font-weight: 700;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            align-items: end;
+            justify-content: end;
+        }
+
+        .login_btn {
+            color: #fff !important;
+            text-align: center;
+            background-color: #150b48;
+            border-radius: 12rem;
+            justify-content: center;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            font-size: .9rem;
+            font-weight: 700;
+            transition: all .6s cubic-bezier(.23, 1, .32, 1);
+            box-shadow: 0 0 0 0 #92b22f;
+        }
+
+        .btn-nav-link {
+            color: #fff !important;
+            background-color: #0563d86e;
+            border-radius: 0.25em;
+            margin-left: 1em;
+            padding: 0.5em 1.25em;
+            font-family: DM Sans, sans-serif;
+            font-size: 1rem;
+            margin-right: 1em;
+            font-weight: 700;
+        }
+
+        .btn--prm-sm:hover {
+            background-color: #065dce;
+            box-shadow: 0 0 0 0.4rem rgb(21 11 72 / 40%);
+        }
+
+        .is-pad-tb-80 {
+            padding-top: 8em !important;
+            padding-bottom: 8em !important;
+            display: block;
+        }
+
+        .hero-caption {
+            background-color: #150b48;
+            border-radius: 0.5em;
+            padding: 0.25em 0.75em;
+        }
+
+        .rns-w-fc {
+            width: fit-content;
+        }
+
+        .rns-h1 {
+            font-family: Raleway, sans-serif;
+            font-size: 3.75em;
+            font-style: normal;
+            font-weight: 800;
+            text-align: left;
+            line-height: 1.2;
+            color: #150b48f0;
+        }
+
+        .padding-top {
+            padding-top: 20px;
+        }
+
+        .rns-txt-gradient {
+            background: linear-gradient(90deg, #007bff 17.14%, #150b48 63.66%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .hero03.is-bg-green-50 {
+            background-image: url('6421ddc6eb9b437f41d20892_vv (2).jpg');
+            background-position: 0 0;
+            background-size: cover;
+            display: block;
+        }
+
+        p {
+            font-family: DM Sans, sans-serif;
+            margin-bottom: 10px !important;
+        }
+
+        .fa-check-square {
+            color: #007bff;
+        }
+
+        .is-txt-medium {
+            font-size: 17px;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .hero_cta-wrap {
+            grid-column-gap: 1.5em;
+            align-items: center;
+            display: flex;
+        }
+
+        .btn--sec-med {
+            color: #e7e7e7;
+            text-align: center;
+            background-color: #150b48;
+            border-radius: 12em;
+            justify-content: center;
+            align-items: center;
+            padding: 1.35rem 2.55rem;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all .3s linear;
+            box-shadow: 0 0 0 0.2rem #017bff;
+        }
+
+        .btn--sec-med:hover {
+            background-color: #111;
+            box-shadow: 0 0 0 0.4rem rgba(2, 199, 123, .5);
+        }
+
+        a:active,
+        a:hover {
+            outline: 0;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        .bold_green {
+            font-weight: 600;
+            color: #02c77b;
+        }
+
+        .rns_bg_white {
+            background-color: #fff;
+        }
+
+        .align_cen {
+            text-align: center;
+        }
+
+        .rns_h2 {
+            font-family: Raleway, sans-serif;
+            font-size: 3em;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .is-pad-t-64 {
+            padding-top: 4em;
+        }
+
+        .grid--4-4-4 {
+            width: 100%;
+            grid-column-gap: 1.5em;
+            grid-row-gap: 1.5em;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .course_card {
+            background-color: rgba(2, 199, 123, .2);
+            border: 1px solid #02c77b;
+            border-radius: 1.5em;
+            flex-direction: column;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+        }
+
+        .w-layout-grid {
+            grid-row-gap: 16px;
+            grid-column-gap: 16px;
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-columns: 1fr;
+            display: grid;
+        }
+
+        .internship_heading {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .course_img {
+            width: 100%;
+
+            border-radius: 7px;
+        }
+
+        .course_block {
+            text-align: center;
+            margin: 30px 0px;
+            background-color: rgba(2, 199, 123, .2);
+            border: 1px solid #02c77b;
+            border-radius: 1.5em;
+            flex-direction: column;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+        }
+
+        .internship_heading h4 {
+            padding: 20px 20px;
+            padding-top: 40px !important;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .course_heading {
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.05);
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: -30px;
+            padding: 25px;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .course_heading {
+            font-size: 15px;
+            margin-bottom: 0;
+            color: #0e314c !important;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .apply_now_btn {
+            background-image: linear-gradient(to right, #28e98c, #173140, #1d5e55, #8E37D7);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+            border-radius: 30px;
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            /* opacity: 0; */
+            color: #fff;
+            padding: 10px 20px;
+            /* visibility: hidden; */
+        }
+
+        .course_block:hover .apply_now_btn {
+            background-image: linear-gradient(to right, #28e98c, #173140, #1d5e55, #8E37D7);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .course_block h6 {
+            padding: 10px 30px;
+        }
+
+        .reduce_font {
+            padding: 10px 30px;
+        }
+
+        .course_block img {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .reduce_font {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .text-align-left {
+            text-align: left;
+        }
+
+        .inner_course_block {
+            background-color: rgb(143 185 235 / 32%);
+            border: 1px solid #150b48;
+            border-radius: 1.5em;
+            flex-direction: column;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+        }
+
+        .coures_main_block .inner_course_block_heading {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .coures_main_block .course_content {
+            padding: 1.5em;
+            text-transform: capitalize;
+            font-family: Raleway, sans-serif;
+
+        }
+
+        .coures_main_block a {
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: Raleway, sans-serif;
+            color: #000;
+        }
+
+        .padding-top_10 {
+            padding-top: 10px;
+        }
+
+        .learn_block {
+            margin-bottom: 30px;
+            border-radius: 20px;
+        }
+
+        .learn_block_text {
+            padding: 20px 30px !important;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: #fff;
+            background-color: #020a25;
+        }
+
+        .about_block_2_text {
+            padding: 40px 40px !important;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            color: #fff;
+            background-color: #020a25;
+        }
+
+        .learn_block_text h4 {
+            padding: 2em;
+            font-family: Raleway, sans-serif;
+            font-size: 2em;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+            padding-bottom: 20px;
+        }
+
+        .about_block_2 h4 {
+            padding: 2em;
+            font-family: Raleway, sans-serif;
+            font-size: 2em;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+            padding-bottom: 20px;
+        }
+
+        .learn_block_text a {
+            margin-left: 65px;
+
+        }
+
+        .about_block_2_text a {
+            margin-left: 65px;
+
+        }
+
+        .gr_2 {
+            background: linear-gradient(90deg, #0bf8e8 17.14%, #06f8e5 63.66%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .learn_block_img img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        .about_block_2_img img {
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        .about_block_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about_block {
+            background-image: linear-gradient(#150b48, #0756db);
+        }
+
+        .padding_only {
+            padding-left: 6em;
+            padding-right: 6em;
+            padding-top: 5em;
+            padding-bottom: 5em;
+        }
+
+        .btn--ter-sm {
+            color: #02c77b;
+            text-align: center;
+            background-color: #e7fef8;
+            border: 2px solid #02c77b;
+            border-radius: 12rem;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all .6s cubic-bezier(.23, 1, .32, 1);
+            box-shadow: 0 0 0 0 #92b22f;
+        }
+
+        .btn--ter-sm:hover {
+            box-shadow: none;
+            color: #fff;
+            background-color: #02c77b;
+        }
+
+        .about_block_text {
+            color: #fff !important;
+        }
+
+        .about_block_2_text h4 {
+            padding: 0px;
+        }
+
+        .footer {
+            background-color: #020a25;
+        }
+
+        .footer {
+            color: #fff !important;
+            font-family: Raleway, sans-serif;
+        }
+
+        .bottom_block p {
+            font-size: 14px
+        }
+
+        .is-h2 {
+            font-family: Raleway, sans-serif;
+            font-size: 3em;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+
+        .is-h6 {
+            font-family: Raleway, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .top_block p {
+            font-size: 15px;
+        }
+
+        .footer_logo img {
+            width: 10%;
+            margin-bottom: 40px;
+        }
+
+        .social_media_icons {
+            display: flex
+        }
+
+        .footer_icon_block {
+            background-color: #fff;
+            color: #000;
+            display: inline;
+            text-align: center;
+            margin: 5px !important;
+            padding: 4px 11px;
+            border-radius: 7px
+        }
+
+        .footer_icon_block .fa {
+            padding: 2px 0;
+            color: #000 !important;
+            font-size: 23px
+        }
+
+        .footer_icon_block.row.col-md-2 {
+            display: contents
+        }
+    </style>
+</head>
+
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3  px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <img src="logo.png" style="width:15%"></img>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3 padding_rt" id="navbarCollapse">
+            <div class="navbar-nav  py-0 padding_rt">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Beginners</a>
+                <a href="#" class="nav-item nav-link btn-nav-link">Pro</a>
+                <a href="#" class="nav-item nav-link btn-nav-link">Pro+</a>
+                <a href="#" class="nav-item nav-link login_btn btn--prm-sm w-button">Login</a>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="hero03 is-bg-green-50 wf-section">
+        <div class="container-fluid d-flex is-pad-tb-80 align-items-center mb-5  px-lg-5" id="home"
+            style="min-height: 100vh;">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-left padding-top">
+                    <div class="hero-caption rns-w-fc">
+                        <div class="rns-txt-small" style="color: #fff;">Take your skill to the next level 🚀</div>
+                    </div>
+                    <div class="padding-top"></div>
+                    <h1 class="rns-h1">LEARN THE ART OF <span class="rns-txt-gradient">TRADING</span> &amp; <span
+                            class="rns-txt-gradient">INVESTING</span></h1>
+                    <div class="padding-top"></div>
+                    <p class="is-txt-medium">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque natus blanditiis quibusdam dolor
+                        praesentium fugiat, cumque dolore? Dignissimos illum similique sapiente debitis tempore minima
+                        laborum consectetur modi. Dignissimos, quod commodi?
+                    </p>
+                    <div class="bullet_points is-txt-medium">
+                        <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit.</p>
+                    </div>
+                    <div class="hero_cta-wrap is-pad-t-32 padding-top"><a href="#"
+                            class="btn--sec-med is-btn-p-fw w-button">Get FREE Access Now!</a>
+                        <div class="student_avatar-wrap">
+
+                            <div class="text-block" style="font-family: DM Sans, sans-serif;"><span
+                                    class="bold_green">2500+</span> SLorem ipsum, dolor sit amet consectetur </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5    padding-top">
+                    <img style="width:100%" src="book_cover_8.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses -->
+    <div class="container mb-5">
+        <div id="free_course" class="course  rns_bg_white wf-section">
+
+            <h2 class="rns_h2 align_cen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, officia?
+            </h2>
+            <div class="is-pad-t-64"></div>
+            <div class="row">
+                <div class="col-md-4 coures_main_block">
+                    <a href="#" target="_blank">
+                        <div class="inner_course_block">
+                            <h5 class="inner_course_block_heading">Lorem ipsum dolor</h5>
+                            <img
+                                src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/course_image_option_4.png?time=1696939907">
+
+                            <div class="course_content">
+                                <h5>Lorem ipsum dolor</h5>
+                                <div class="padding-top_10"></div>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 coures_main_block">
+                    <a href="#" target="_blank">
+                        <div class="inner_course_block">
+                            <h5 class="inner_course_block_heading">Lorem ipsum dolor</h5>
+                            <img
+                                src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/course_image_option_4.png?time=1696939907">
+
+                            <div class="course_content">
+                                <h5>Lorem ipsum dolor</h5>
+                                <div class="padding-top_10"></div>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 coures_main_block">
+                    <a href="#" target="_blank">
+                        <div class="inner_course_block">
+                            <h5 class="inner_course_block_heading">Lorem ipsum dolor</h5>
+                            <img
+                                src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/course_image_option_4.png?time=1696939907">
+
+                            <div class="course_content">
+                                <h5>Lorem ipsum dolor</h5>
+                                <div class="padding-top_10"></div>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                                <p><i class="fa fa-check-square" aria-hidden="true"></i> Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learn Block -->
+    <div class="container learn_block  mb-5">
+        <div class="row">
+            <div class="col-md-6 learn_block_img" style="padding:0px  !important">
+                <img src="63fdd1f98f3f2ed67cb8d832_Course Image (5)-min.webp" alt="">
+            </div>
+            <div class="col-md-6 learn_block_text" style="padding-left:0px  !important;padding-right:0px  !important">
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+                    Lorem ipsum <span class="gr_2">dolor sit amet consectetur</span>.</h4>
+                <a href="#" class="btn--ter-sm w-button">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="container-fluid about_block  mb-5">
+        <div class="row padding_only">
+            <div class="col-md-4 about_block_img">
+                <img src="63fdd1f98f3f2ed67cb8d832_Course Image (5)-min.webp" alt="">
+            </div>
+            <div class="col-md-8 about_block_text">
+
+                <h4>Meet Us
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate quod praesentium corrupti
+                    laborum rem eligendi doloribus fuga eius mollitia?Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nostrum cupiditate quod praesentium corrupti
+                    laborum rem eligendi doloribus fuga eius mollitia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate quod praesentium corrupti
+                    laborum rem eligendi doloribus fuga eius mollitia?Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nostrum cupiditate quod praesentium corrupti
+                    laborum rem eligendi doloribus fuga eius mollitia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate quod praesentium corrupti
+                    laborum rem eligendi doloribus fuga eius mollitia?Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nostrum cupiditate quod praesentium corrupti
+                    laborum rem eligendi doloribus fuga eius mollitia?</p>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Learn Block -->
+    <div class="container about_block_2  mb-5">
+        <div class="row">
+
+            <div class="col-md-6 about_block_2_text">
+                <h4>
+                    <span class="gr_2">About RISE 'N' SHINE TECHNOLOGIES</span>.
+                </h4>
+                <br>
+                <p>We are leading training and consultancy which aims to become the best education training institute
+                    especially for Admin and Developer's Group who are trying to learn Cloud and DevOps products. It
+                    offers MNC environment and infrastructure student's benefits with the facilities of working in real
+                    time environment and provide the best services in all the categories we deal with.</p>
+                <br>
+                <p>Even though there is a lot of documentation available on internet, it can easily overwhelm
+                    beginners
+                    with our programs. Many training providers offer extensive training, but at substantial dent to your
+                    pocket. To bridge this gap, we are offering a series of lessons that can help create a structured
+                    learning path for beginners as well as advanced learners.
+                </p>
+            </div>
+            <div class="col-md-6 about_block_2_img" style="padding:0px  !important">
+                <img src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/corporate-training.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Block -->
+
+    <div class="container">
+        <h2 class="is-h2 is-txt-align-center" style="text-align: center;">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample"
+            style="margin-bottom: 40px;padding-left:150px;padding-right: 150px;margin-top: 40px;">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button faq_text is-h6" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        I don’t know anything about trading how can I start?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default variables. It's also worth noting that just about
+                        any
+                        HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item" style="margin-top: 40px;">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button faq_text is-h6" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#two" aria-expanded="true" aria-controls="two">
+                        I don’t know anything about trading how can I start?
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse
+                        plugin adds the appropriate classes that we use to style each element. These classes control the
+                        overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default variables. It's also worth noting that just about
+                        any
+                        HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copywrite -->
+    <div class="footer container-fluid">
+
+        <div class="top_block" style="padding-top:40px;">
+            <div class="row" style="padding-left: 4em;padding-right: 4em;padding-top:40px;padding-bottom:20px;">
+                <div class="col-md-8 footer_logo">
+                    <img src="logo.png"></img>
+                    <br>
+                    <p>We are leading training and consultancy which aims to become the best education training<br>
+                        institute especially for Admin and Developer's Group who are trying to learn Cloud and
+                        DevOps<br>
+                        products</p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Need any Help?
+                    </p>
+                    <p>
+                        <a href="mailto: risenshinetech@gmail.com"> risenshinetech@gmail.com</a>
+                    </p>
+                    <p style="padding-top:20px;">
+                        For further information please visit:</p>
+                    <p>
+                        <a href="https://risenshinetechnologies.com/privacy-policy-2/" target="_blank">PRIVACY
+                            POLICY</a> | <a href="https://risenshinetechnologies.com/terms-conditions/" target="_blank">
+                            TERMS & CONDITIONS
+                        </a>
+                    </p>
+                    <p style="padding-top:20px;">
+                        We would love you hear from you!
+
+                    </p>
+                    <p>
+                        <a href="#" target="_blank">Feedback
+                        </a>
+                    </p>
+                    <img src="logo.png" style="    width: 13.56em;
+                    height: 100%;
+                    opacity: .1;
+                    object-fit: contain;
+                    display: block;
+                    position: absolute;
+                    top: -3em;
+                    bottom: auto;
+                    left: auto;
+                    right: -4vw;"></img>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_block">
+            <div class="row"
+                style="align-items: center;padding-left: 4em;padding-right: 4em;padding-top:40px;padding-bottom:20px;">
+                <div class="col-md-3">
+                    <p> © 2023 RNS. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p style="text-align: center;">RNS is the brand of Everyday Essentials with GST number
+                        04APVPR0269J1ZC.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="social_media_icons">
+                        <p class="footer_icon_block"><a class="a_tag_black"
+                                href="https://www.instagram.com/risenshinetechnologies" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></p>
+                        <p class="footer_icon_block" style="margin-left:0px;"><a class="a_tag_black" target="_blank"
+                                href="https://www.facebook.com/RiseNShineTechnologies//"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></a></p>
+                        <p class="footer_icon_block"><a class="a_tag_black" target="_blank"
+                                href="https://www.youtube.com/@devopswithcloudandAI"><i class="fa fa-youtube-play"
+                                    aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            //>=, not <=
+            if (scroll >= 500) {
+                //clearHeader, not clearheader - caps H
+                $(".navbar-light").addClass("shownav");
+                $(".back-to-top").addClass("shownav");
+
+            }
+            else {
+                $(".navbar-light").removeClass("shownav");
+                $(".back-to-top").removeClass("shownav");
+            }
+            //>=, not <=
+            if (scroll <= 500) {
+                //clearHeader, not clearheader - caps H
+                $(".scroll-to-bottom").addClass("showarrow");
+            }
+            else {
+                $(".scroll-to-bottom").removeClass("showarrow");
+            }
+        }); //missing );
+    </script>
+
+
+
+</body>
+
+
+
+</html>
