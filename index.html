@@ -366,8 +366,8 @@
 
         .about_block_2_text {
             padding: 40px 40px !important;
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
             color: #fff;
             background-color: #020a25;
         }
@@ -400,13 +400,17 @@
         .about_block_2 h4 {
             padding: 2em;
             font-family: Raleway, sans-serif;
-            font-size: 2em;
+            font-size: 1.4em;
             font-style: normal;
             font-weight: 700;
             line-height: 1.2;
             padding-bottom: 20px;
         }
 
+        .about_block_2_text p {
+            font-size: 17px !important;
+            text-align: justify;
+        }
 
         .accordion-body {
             font-family: DM Sans, sans-serif;
@@ -564,7 +568,7 @@
             top: 15px;
             color: #3d3d3d;
             border: 1px solid #ccc;
-            min-height: 301px;
+            min-height: 250px;
             padding: 15px;
         }
 
@@ -602,13 +606,13 @@
         }
 
         .carousel-control-prev {
-            left: 0%;
+            left: 9%;
             top: 78%;
             z-index: 999;
         }
 
         .carousel-control-next {
-            left: 87%;
+            left: 31%;
             top: 78%;
             z-index: 999;
         }
@@ -697,8 +701,9 @@
             padding-bottom: 20px;
         }
 
-        .testimonial_block {
-            background-color: #007bff;
+        .small,
+        small {
+            font-family: DM Sans, sans-serif;
         }
 
         .card {
@@ -708,6 +713,7 @@
         .card .carousel-caption {
             background-color: #fff;
             border-radius: 25px;
+            box-shadow: 2px 2px 2px 2px #150b482e;
         }
 
         .is-h2 {
@@ -839,6 +845,67 @@
             padding-top: 40px;
         }
 
+        .testimonial-slider {
+            background-color: #5072a7;
+            padding: 2em 2em 3em;
+        }
+
+        .testimonial-title {
+            color: #fff;
+        }
+
+        .testimonial-title h2 {
+            padding-left: 0.2em;
+        }
+
+        .card {
+            margin: 0 0.5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+
+        }
+
+        .card-body {
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #fff;
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+
+
+
+        @media (min-width: 767px) and (max-width: 991px) {
+            .card .carousel-caption h3 {
+                margin-top: 0;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .btn-nav-link {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+
+            .login_btn {
+                border-radius: 0px;
+                margin-top: 10px;
+            }
+
+            .rns_logo {
+                margin-left: 20px;
+            }
+
+
+        }
+
         @media (max-width: 767px) {
             .carousel-caption {
                 position: relative;
@@ -961,31 +1028,36 @@
                 padding: 1em;
             }
 
+            .carousel-inner {
+                padding: 1em;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                opacity: 1;
+                position: absolute;
+                left: 1em;
+                top: 90%;
+                transform: translateY(-50%);
+            }
+
+            .carousel-control-next {
+                left: 5em;
+            }
+
 
         }
 
-        @media (min-width: 767px) and (max-width: 991px) {
-            .card .carousel-caption h3 {
-                margin-top: 0;
-                font-size: 16px;
-                font-weight: 700;
+        @media (min-width: 576px) {
+            .carousel-item {
+                margin-right: 0;
+                flex: 0 0 50%;
+                display: block;
             }
 
-            .btn-nav-link {
-                margin-left: 0px;
-                margin-top: 10px;
+            .carousel-inner {
+                display: flex;
             }
-
-            .login_btn {
-                border-radius: 0px;
-                margin-top: 10px;
-            }
-
-            .rns_logo {
-                margin-left: 20px;
-            }
-
-
         }
     </style>
 </head>
@@ -1070,8 +1142,10 @@
                 <img src="Banner_img.png" alt="">
             </div>
             <div class="col-md-6 learn_block_text">
-                <h4>The Unique Platform You Need to Skyrocket <br>
-                    Your IT Skills to Dream <span class="gr_2">Your IT Job (DYIJ).</span>.</h4>
+                <h4>
+                    The SIX Steps Unique Process model <br>
+                    <span class="gr_2">to dream your IT Job </span>.
+                </h4>
 
             </div>
         </div>
@@ -1088,7 +1162,7 @@
                 <div class="col-md-4 coures_main_block">
                     <a href="#" target="_blank">
                         <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Step-1: Identifying Skill Gaps</h5>
+                            <h5 class="inner_course_block_heading">Identifying Skill Gaps</h5>
                             <img src="identifying_Skill_Gaps_img.png">
 
                             <div class="course_content">
@@ -1111,7 +1185,7 @@
                 <div class="col-md-4 coures_main_block">
                     <a href="#" target="_blank">
                         <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Step-2: Learning Skills</h5>
+                            <h5 class="inner_course_block_heading">Learning Skills</h5>
                             <img src="Learning_Skills.png">
 
                             <div class="course_content">
@@ -1134,7 +1208,7 @@
                 <div class="col-md-4 coures_main_block">
                     <a href="#" target="_blank">
                         <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Step-3: Evaluation of Skills</h5>
+                            <h5 class="inner_course_block_heading">Evaluation of Skills</h5>
                             <img src="Evaluation_of_Skills.png">
                             <div class="course_content">
                                 <div class="padding-top_10"></div>
@@ -1157,7 +1231,7 @@
                 <div class="col-md-4 coures_main_block">
                     <a href="#" target="_blank">
                         <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Step-4: Online Presence</h5>
+                            <h5 class="inner_course_block_heading">Online Presence</h5>
                             <img src="online_Presence.png">
                             <div class="course_content">
                                 <div class="padding-top_10"></div>
@@ -1174,7 +1248,7 @@
                 <div class="col-md-4 coures_main_block">
                     <a href="#" target="_blank">
                         <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Step-5: Cracking Interview</h5>
+                            <h5 class="inner_course_block_heading">Cracking Interview</h5>
                             <img src="Interview.png">
                             <div class="course_content">
                                 <div class="padding-top_10"></div>
@@ -1191,7 +1265,7 @@
                 <div class="col-md-4 coures_main_block">
                     <a href="#" target="_blank">
                         <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Step-6: Getting Job</h5>
+                            <h5 class="inner_course_block_heading">Getting Job</h5>
                             <img src="getting_job.png">
                             <div class="course_content">
                                 <div class="padding-top_10"></div>
@@ -1219,21 +1293,16 @@
                     <span class="gr_2">About RISE 'N' SHINE TECHNOLOGIES</span>.
                 </h4>
                 <br>
-                <p>We are leading training and consultancy which aims to become the best education training
-                    institute
-                    especially for Admin and Developer's Group who are trying to learn Cloud and DevOps products. It
-                    offers MNC environment and infrastructure student's benefits with the facilities of working in
-                    real
-                    time environment and provide the best services in all the categories we deal with.</p>
-                <br>
-                <p>Even though there is a lot of documentation available on internet, it can easily overwhelm
-                    beginners
-                    with our programs. Many training providers offer extensive training, but at substantial dent to
-                    your
-                    pocket. To bridge this gap, we are offering a series of lessons that can help create a
-                    structured
-                    learning path for beginners as well as advanced learners.
-                </p>
+                <p> As per the Labour Bureau of India, our country has the highest number of unemployed educated youth -
+                    a staggering 13% of all graduates are unemployed.</p>
+                <p>We identified that the driving factor behind the worrisome number was the gap between skill & formal
+                    education. With corporates continuing to value skills over degree & book knowledge, our education
+                    system fell behind in providing adequate opportunities to our youth. </p>
+                <p> With an aim to bridge this gap & to make our youth more employable, Rise 'n' Shine Technologies,
+                    founded by a team of highly experienced teachers & trainers was formed. Rise 'n' Shine is a platform
+                    to learn real world skills for both – students & working professionals.</p>
+                <p> With a unique process model that makes learning accessible & convenient to everyone, we plan to make
+                    you future ready, today!</p>
             </div>
             <div class="col-md-6 about_block_2_img padding-top_10">
                 <h5 class="about_heading">
@@ -1578,141 +1647,94 @@
         </div>
     </div>
 
+    <!-- testimonial checking -->
+
     <!-- Testimonial Block -->
     <div class="is-pad-t-64"></div>
-    <div class="testimonial_block padding-top">
-
-        <section class="pt-5 pb-5">
+    <div class="testimonial-slider">
+        <div id="carouselExampleControls" class="carousel carousel-dark">
             <div class="container-fluid">
-                <h2 class="text-center is-h2">Testimonials</h2>
-                <hr class="midline">
-
-                <div class="card col-md-12 mt-2">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
-                        data-interval="100000">
-                        <div class="w-100 carousel-inner mb-5" role="listbox">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial-title">
+                            <i class="bi bi-quote display-1"></i>
+                            <h2 class="fw-bold display-6">Testimonials</h2>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <i class="fa fa-arrow-left" aria-hidden="true" style="color: #000;"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <i class="fa fa-arrow-right" aria-hidden="true" style="color: #000;"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="bg"></div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-12 padding-top">
+                                <div class="card">
 
-                                                    <p class=" padding-top">Rise n Shine Technologies transformed my
-                                                        career. With their guidance and training, I transitioned from a
-                                                        non-IT background to becoming a successful DevOps Engineer. I
-                                                        secured a job I had only dreamt of before. Their support and
-                                                        resources are unmatched.</p>
-                                                    <small class="smallest mute">- Harsha D</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Harsha D</h5>
 
-                                                    <p class=" padding-top">I can't thank Rise n Shine Technologies
-                                                        enough for helping me land my dream job in AWS Cloud engineer.
-                                                        Their comprehensive training and personalized coaching prepared
-                                                        me for success. I'm now enjoying a rewarding career I'm
-                                                        passionate about.</p>
-                                                    <small class="smallest mute">- Vijay K</small>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="card-text">Rise n Shine Technologies transformed my career. With their
+                                            guidance and training, I transitioned from a non-IT background to becoming a
+                                            successful DevOps Engineer. I secured a job I had only dreamt of before.
+                                            Their support and resources are unmatched.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="bg"></div>
-                                <div class="row">
-                                    <div class="col-md-6 col-12">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-12">
+                                <div class="card">
 
-                                                    <p class=" padding-top">Rise n Shine Technologies not only provided
-                                                        me with the technical skills I needed but also boosted my
-                                                        confidence. Their interview preparation and job placement
-                                                        assistance were invaluable. I'm now working as a Kubernetes
-                                                        specialist, all thanks to them.</p>
-                                                    <small class="smallest mute">- Praveen P</small>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vijay K</h5>
+                                        <p class="card-text">I can't thank Rise n Shine Technologies enough for helping
+                                            me land my dream job in AWS Cloud engineer. Their comprehensive training and
+                                            personalized coaching prepared me for success. I'm now enjoying a rewarding
+                                            career I'm passionate about.</p>
                                     </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-12">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
 
-                                                    <p class=" padding-top">As a recent graduate with little experience,
-                                                        I wasn't sure how to break into the IT field. Rise n Shine
-                                                        Technologies gave me a clear path and supported me every step of
-                                                        the way. Their Python and Machine Learning courses were a
-                                                        game-changer. I'm excited to see where my career goes from here.
-                                                    </p>
-                                                    <small class="smallest mute">- Nagarjuna K</small>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Ashok G</h5>
+                                        <p class="card-text">I was stuck in a dead-end job until I found Rise n Shine
+                                            Technologies. Their real-world projects and certifications helped me level
+                                            up my skills in a competitive job market. Now I'm a sought-after DevOps
+                                            professional with a significant salary increase.</p>
                                     </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-12">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
 
-                                                    <p class=" padding-top">I was stuck in a dead-end job until I found
-                                                        Rise n Shine Technologies. Their real-world projects and
-                                                        certifications helped me level up my skills in a competitive job
-                                                        market. Now I'm a sought-after DevOps professional with a
-                                                        significant salary increase.
-                                                    </p>
-                                                    <small class="smallest mute">- Ashok G</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-12">
-                                        <div class="carousel-caption">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-12">
-
-                                                    <p class=" padding-top">The journey to my dream IT job seemed
-                                                        daunting, but Rise n Shine Technologies made it achievable.
-                                                        Their flexible training schedules allowed me to balance learning
-                                                        with my job. Their guidance and career support helped me secure
-                                                        a Cloud Architect role that I'm truly excited about.
-                                                    </p>
-                                                    <small class="smallest mute">- VG D</small>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">VG D</h5>
+                                        <p class="card-text">The journey to my dream IT job seemed daunting, but Rise n
+                                            Shine Technologies made it achievable. Their flexible training schedules
+                                            allowed me to balance learning with my job. Their guidance and career
+                                            support helped me secure a Cloud Architect role that I'm truly excited
+                                            about.</p>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-arrow-left"
-                                    aria-hidden="true"></i></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa fa-arrow-right"
-                                    aria-hidden="true"></i></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
+
+
+
+
+
 
     <!-- Copywrite -->
     <div class="footer container-fluid">
@@ -1780,6 +1802,36 @@
 
 
     <script>
+        var multipleCardCarousel = document.querySelector("#carouselExampleControls");
+
+        if (window.matchMedia("(min-width: 576px)").matches) {
+            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                interval: false
+            });
+            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+            var cardWidth = $(".carousel-item").width();
+            var scrollPosition = 0;
+            $("#carouselExampleControls .carousel-control-next").on("click", function () {
+                if (scrollPosition < carouselWidth - cardWidth * 3) {
+                    scrollPosition += cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+            $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+                if (scrollPosition > 0) {
+                    scrollPosition -= cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+        } else {
+            $(multipleCardCarousel).addClass("slide");
+        }
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             //>=, not <=
