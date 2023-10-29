@@ -34,9 +34,14 @@
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:wght@800&display=swap');
 
+        .dsg-nav_wrapper {
+            align-items: center;
+            display: flex;
+        }
+
         .padding_rt a {
-            padding-right: 30px !important;
-            padding-left: 30px !important;
+            padding-right: 20px !important;
+            padding-left: 20px !important;
             font-family: 'DM Sans', sans-serif;
             color: #212937;
             font-weight: 700;
@@ -978,6 +983,17 @@
             display: flex;
         }
 
+        .dsg-navbar {
+            z-index: 999;
+            width: 100%;
+            background-color: #fff;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
         @media (min-width: 767px) and (max-width: 991px) {
             .card .carousel-caption h3 {
                 margin-top: 0;
@@ -1145,6 +1161,16 @@
             .btn-nav-link {
                 margin-bottom: 20px;
             }
+
+            .container-col-12 {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
+
+            .padding_rt a {
+
+                margin-bottom: 20px;
+            }
         }
 
         @media (min-width: 576px) {
@@ -1164,77 +1190,90 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body>
+    <div class="fixed-top bg-light shadow-sm ">
+        <div class="container-col-12">
+            <nav class="navbar navbar-expand-lg  dsg-nav_wrapper ">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" class="rns_logo"></img>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+                <div class="collapse navbar-collapse px-lg-3 padding_rt" id="navbarCollapse">
+                    <div class="navbar-nav  py-0 padding_rt">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">Learning Paths</a>
+                        <a href="#" class="nav-item nav-link"><span class="btn-nav-link">DYIJ Programs </span></a>
+                        <a target="_blank" href="https://lhs.risenshinetechnologies.com/web/login"
+                            class="nav-item nav-link "><span class="login_btn btn--prm-sm w-button">Login</span></a>
+            </nav>
+        </div>
+
+    </div>
     <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light  px-lg-5">
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" class="rns_logo"></img>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </a>
-        <div class="collapse navbar-collapse px-lg-3 padding_rt" id="navbarCollapse">
-            <div class="navbar-nav  py-0 padding_rt">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Learning Paths</a>
-                <a href="#" class="nav-item nav-link"><span class="btn-nav-link">DYIJ Programs </span></a>
-                <a target="_blank" href="https://lhs.risenshinetechnologies.com/web/login"
-                    class="nav-item nav-link "><span class="login_btn btn--prm-sm w-button">Login</span></a>
-    </nav>
+
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="hero03 is-bg-green-50 wf-section">
-        <div class="container-fluid d-flex is-pad-tb-80 align-items-center mb-5  px-lg-5" id="home">
-            <div class="row align-items-center">
-                <div class="col-lg-7 text-center text-lg-left padding-top">
-                    <div class="hero-caption rns-w-fc">
-                        <div class="rns-txt-small" style="color: #212937;">Take your skill to the next level 🚀</div>
-                    </div>
-                    <div class="padding-top"></div>
-                    <h1 class="rns-h1">Dream Your <span class="rns-txt-gradient">IT Job</span>
-                        <span class="rns-txt-gradient">(DYIJ) Program</span>
-                    </h1>
-                    <div class="padding-top"></div>
-                    <p class="is-txt-medium">
-                        "Ready to turn your IT dreams into reality? Welcome to Rise n Shine Technologies, where we're
-                        here to help you 'Dream Your IT Job' and make it happen!"
-                    </p>
-                    <div class="bullet_points is-txt-medium">
-                        <p><img src="checkboxes.png"> Your IT career begins here.</p>
-                        <p><img src="checkboxes.png"> Empower your dreams and aspirations in
-                            the world of Information Technology.</p>
-                        <p><img src="checkboxes.png"> Online courses for IT job seekers.
-                        </p>
-                        <p><img src="checkboxes.png"> Suitable for all skill levels and
-                            experience.
-                        </p>
-                        <p><img src="checkboxes.png"> Curated courses, expert instructors,
-                            and a supportive community.
-                        </p>
-                        <p><img src="checkboxes.png"> Resources to help you excel in your IT
-                            career.
-                        </p>
-                        <p><img src="checkboxes.png"> Your partner on the journey to
-                            success.
-                        </p>
-                        <p><img src="checkboxes.png"> Unleash your potential and acquire
-                            essential IT skills.
-                        </p>
-                    </div>
-                    <div class="hero_cta-wrap is-pad-t-32 padding-top"><a
-                            href="https://lhs.risenshinetechnologies.com/web/sign-up" target="_blank"
-                            class="btn--sec-med is-btn-p-fw w-button">Sign-Up for Free Demo Videos</a>
-                    </div>
-                </div>
 
-                <div class="col-lg-5    padding-top">
-                    <img style="width:100%" src="book_cover_8.png" alt="">
-                </div>
+    <div class="hero03 is-bg-green-50 wf-section ">
+        <div class="container-col-12 w-container">
+            <div class=" d-flex is-pad-tb-80 align-items-center mb-5" id="home">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-left padding-top">
+                        <div class="hero-caption rns-w-fc">
+                            <div class="rns-txt-small" style="color: #212937;">Take your skill to the next level 🚀
+                            </div>
+                        </div>
+                        <div class="padding-top"></div>
+                        <h1 class="rns-h1">Dream Your <span class="rns-txt-gradient">IT Job</span>
+                            <span class="rns-txt-gradient">(DYIJ) Program</span>
+                        </h1>
+                        <div class="padding-top"></div>
+                        <p class="is-txt-medium">
+                            "Ready to turn your IT dreams into reality? Welcome to Rise n Shine Technologies, where
+                            we're
+                            here to help you 'Dream Your IT Job' and make it happen!"
+                        </p>
+                        <div class="bullet_points is-txt-medium">
+                            <p><img src="checkboxes.png"> Your IT career begins here.</p>
+                            <p><img src="checkboxes.png"> Empower your dreams and aspirations in
+                                the world of Information Technology.</p>
+                            <p><img src="checkboxes.png"> Online courses for IT job seekers.
+                            </p>
+                            <p><img src="checkboxes.png"> Suitable for all skill levels and
+                                experience.
+                            </p>
+                            <p><img src="checkboxes.png"> Curated courses, expert instructors,
+                                and a supportive community.
+                            </p>
+                            <p><img src="checkboxes.png"> Resources to help you excel in your IT
+                                career.
+                            </p>
+                            <p><img src="checkboxes.png"> Your partner on the journey to
+                                success.
+                            </p>
+                            <p><img src="checkboxes.png"> Unleash your potential and acquire
+                                essential IT skills.
+                            </p>
+                        </div>
+                        <div class="hero_cta-wrap is-pad-t-32 padding-top"><a
+                                href="https://lhs.risenshinetechnologies.com/web/sign-up" target="_blank"
+                                class="btn--sec-med is-btn-p-fw w-button">Sign-Up for Free Demo Videos</a>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-5    padding-top">
+                        <img style="width:100%" src="book_cover_8.png" alt="">
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    </div>
+
     <!-- Learn Block -->
     <div class="container learn_block  mb-5 ">
         <div class="is-pad-t-64"></div>
@@ -1460,7 +1499,7 @@
                     </div>
                     <div class="courses_conatiner_block">
                         <div class="row padding-top">
-                            <div class="col-md-4 courses_main_block">
+                            <div class="col-md-4 col-sm-6 col-xs-6 courses_main_block">
                                 <div class="course_img">
                                     <p>DevOps IQ Hackathon <br><i>Workshop - 1</i></p><img
                                         src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/img_1.png"
@@ -1486,7 +1525,7 @@
                                         More</a>
                                 </div>
                             </div>
-                            <div class="col-md-4 courses_main_block">
+                            <div class="col-md-4 col-sm-6 col-xs-6 courses_main_block">
                                 <div class="course_img">
                                     <p>Docker &amp; K8s Project with ChatGPT <br><i>Workshop - 2</i></p>
                                     <img src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/img_2.png"
@@ -1512,7 +1551,7 @@
                                         Learn More</a>
                                 </div>
                             </div>
-                            <div class="col-md-4 courses_main_block">
+                            <div class="col-md-4 col-sm-6 col-xs-6 courses_main_block">
                                 <div class="course_img">
                                     <p>AI Tools for Developers <br><i>Workshop - 3</i></p>
                                     <img src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/img_3.png"
@@ -1541,7 +1580,7 @@
                         </div>
                         <div class="collapse" id="collapseExample">
                             <div class="row padding-top">
-                                <div class="col-md-4 courses_main_block">
+                                <div class="col-md-4 col-sm-6 col-xs-6 courses_main_block">
                                     <div class="course_img">
                                         <p>Become Master on Prompt Engineering <br><i>Workshop - 4</i></p>
                                         <img src="https://aji97f.n3cdn1.secureserver.net/wp-content/uploads/img_4.png"
