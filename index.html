@@ -742,8 +742,7 @@
         }
 
         .footer_alignment {
-            padding-left: 4em;
-            padding-right: 4em;
+
             padding-top: 40px;
             padding-bottom: 20px;
         }
@@ -943,6 +942,41 @@
             display: none;
         }
 
+        .align-items-center {
+            align-items: center !important;
+            justify-content: center;
+        }
+
+        .padding_classes {
+            padding-left: 6em;
+            padding-right: 6em;
+        }
+
+        .container-col-12 {
+            width: 100%;
+            max-width: 1416px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 6em;
+            padding-right: 6em;
+            display: block;
+        }
+
+        .main_footer {
+            background-color: #212937;
+        }
+
+        .main_footer_1 {
+            background-color: #0f131c;
+        }
+
+        .footer_content p {
+            color: #fff;
+            text-align: center;
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+        }
 
         @media (min-width: 767px) and (max-width: 991px) {
             .card .carousel-caption h3 {
@@ -1122,6 +1156,9 @@
 
             .carousel-inner {
                 display: flex;
+                display: flex;
+                align-items: center;
+                JUSTIFY-CONTENT: center;
             }
         }
     </style>
@@ -1148,8 +1185,7 @@
 
     <!-- Header Start -->
     <div class="hero03 is-bg-green-50 wf-section">
-        <div class="container-fluid d-flex is-pad-tb-80 align-items-center mb-5  px-lg-5" id="home"
-            style="min-height: 100vh;">
+        <div class="container-fluid d-flex is-pad-tb-80 align-items-center mb-5  px-lg-5" id="home">
             <div class="row align-items-center">
                 <div class="col-lg-7 text-center text-lg-left padding-top">
                     <div class="hero-caption rns-w-fc">
@@ -1806,69 +1842,78 @@
 
 
 
-
     <!-- Copywrite -->
-    <div class="footer container-fluid">
 
-        <div class="top_block" style="padding-top:40px;">
-            <div class="row footer_alignment">
-                <div class="col-md-8 footer_logo">
-                    <img src="logo.png"></img>
-                    <br>
-                    <p>We are leading training and consultancy which aims to become the best education training<br>
-                        institute especially for Admin and Developer's Group who are trying to learn Cloud and
-                        DevOps<br>
-                        products</p>
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Need any Help?
-                    </p>
-                    <p>
-                        <a href="mailto: risenshinetech@gmail.com"> risenshinetech@gmail.com</a>
-                    </p>
-                    <p class="padding-top_10">
-                        For further information please visit:</p>
-                    <p>
-                        <a href="https://risenshinetechnologies.com/privacy-policy-2/" target="_blank">PRIVACY
-                            POLICY</a> | <a href="https://risenshinetechnologies.com/terms-conditions/" target="_blank">
-                            TERMS & CONDITIONS
-                        </a>
-                    </p>
-                    <p class="padding-top_10">
-                        We would love you hear from you!
+    <div class="main_footer">
+        <div class="container-col-12 footer_alignment padding_classes" style="background-color: #212937;">
+            <div class="footer">
+                <div class="top_block" style="padding-top:40px;">
+                    <div class="row">
+                        <div class="col-md-8 footer_logo">
+                            <img src="logo.png"></img>
+                            <br>
+                            <p>We are leading training and consultancy which aims to become the best education
+                                training<br>
+                                institute especially for Admin and Developer's Group who are trying to learn Cloud and
+                                DevOps<br>
+                                products</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                Need any Help?
+                            </p>
+                            <p>
+                                <a href="mailto: risenshinetech@gmail.com"> risenshinetech@gmail.com</a>
+                            </p>
+                            <p class="padding-top_10">
+                                For further information please visit:</p>
+                            <p>
+                                <a href="https://risenshinetechnologies.com/privacy-policy-2/" target="_blank">PRIVACY
+                                    POLICY</a> | <a href="https://risenshinetechnologies.com/terms-conditions/"
+                                    target="_blank">
+                                    TERMS & CONDITIONS
+                                </a>
+                            </p>
+                            <p class="padding-top_10">
+                                We would love you hear from you!
 
-                    </p>
-                    <p>
-                        <a href="#" target="_blank">Feedback
-                        </a>
-                    </p>
-                    <img src="logo.png" class="footer_bg_logo"></img>
-                </div>
-            </div>
-        </div>
-        <div class="bottom_block">
-            <div class="row footer_content">
-                <div class="col-md-4">
-                    <p> © 2023 RNS. All rights reserved.</p>
-                </div>
-
-                <div class="col-md-8">
-                    <div class="social_media_icons">
-                        <p class="footer_icon_block"><a class="a_tag_black"
-                                href="https://www.instagram.com/risenshinetechnologies" target="_blank"><i
-                                    class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                        <p class="footer_icon_block" style="margin-left:0px;"><a class="a_tag_black" target="_blank"
-                                href="https://www.facebook.com/RiseNShineTechnologies//"><i class="fa fa-facebook"
-                                    aria-hidden="true"></i></a></p>
-                        <p class="footer_icon_block"><a class="a_tag_black" target="_blank"
-                                href="https://www.youtube.com/@devopswithcloudandAI"><i class="fa fa-youtube-play"
-                                    aria-hidden="true"></i></a></p>
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">Feedback
+                                </a>
+                            </p>
+                            <img src="logo.png" class="footer_bg_logo"></img>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+    <div class="main_footer_1">
+        <div class="container-col-12 footer_content">
+            <div class="bottom_block">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <p> © 2023 RNS. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="social_media_icons">
+                            <p class="footer_icon_block"><a class="a_tag_black"
+                                    href="https://www.instagram.com/risenshinetechnologies" target="_blank"><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a></p>
+                            <p class="footer_icon_block" style="margin-left:0px;"><a class="a_tag_black" target="_blank"
+                                    href="https://www.facebook.com/RiseNShineTechnologies//"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a></p>
+                            <p class="footer_icon_block"><a class="a_tag_black" target="_blank"
+                                    href="https://www.youtube.com/@devopswithcloudandAI"><i class="fa fa-youtube-play"
+                                        aria-hidden="true"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
