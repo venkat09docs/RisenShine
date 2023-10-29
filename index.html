@@ -394,7 +394,7 @@
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             color: #fff;
-            background-image: linear-gradient(#000135, #000135);
+            background-color: #212937;
             border-left: 6px solid #b2b2c2;
             display: flex;
             align-items: center;
@@ -644,13 +644,13 @@
         }
 
         .carousel-control-prev {
-            left: 9%;
+            left: 1%;
             top: 78%;
             z-index: 999;
         }
 
         .carousel-control-next {
-            left: 31%;
+            right: 0%;
             top: 78%;
             z-index: 999;
         }
@@ -904,8 +904,8 @@
         }
 
         .testimonial-slider {
-            background-color: #5072a7;
-            padding: 2em 2em 3em;
+            background-color: #212937;
+
         }
 
         .testimonial-title {
@@ -930,14 +930,18 @@
 
         .carousel-control-prev,
         .carousel-control-next {
-            background-color: #fff;
+            background-color: #02c77b;
             width: 3em;
             height: 3em;
             border-radius: 50%;
-            top: 60%;
+            top: 381%;
+            opacity: 1;
             transform: translateY(-50%);
         }
 
+        .carousel-control-prev {
+            display: none;
+        }
 
 
         @media (min-width: 767px) and (max-width: 991px) {
@@ -1107,7 +1111,7 @@
         @media (min-width: 576px) {
             .carousel-item {
                 margin-right: 0;
-                flex: 0 0 50%;
+                flex: 0 0 48%;
                 display: block;
             }
 
@@ -1706,86 +1710,94 @@
     <!-- Testimonial Block -->
     <div class="is-pad-t-64"></div>
     <div class="testimonial-slider">
+        <div class="is-pad-t-64"></div>
         <div id="carouselExampleControls" class="carousel carousel-dark">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <div class="testimonial-title">
                             <i class="bi bi-quote display-1"></i>
-                            <h2 class="fw-bold display-6">Testimonials</h2>
+                            <h2 class="fw-bold display-6" style="text-align: center;">Testimonials</h2>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
-                            <i class="fa fa-arrow-left" aria-hidden="true" style="color: #000;"></i>
+                        <button class="carousel-control-prev" id="classShow" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true" style="color: #fff;    font-size: 34px;"></i>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
-                            <i class="fa fa-arrow-right" aria-hidden="true" style="color: #000;"></i>
+                        <button class="carousel-control-next" type="button" onclick="showLeft()"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"
+                                style="color: #fff;    font-size: 34px;"></i>
                             <span class="visually-hidden">Next</span>
                         </button>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card">
 
-                                    <div class="card-body">
-                                        <h5 class="card-title">Harsha D</h5>
-
-                                        <p class="card-text">Rise n Shine Technologies transformed my career. With their
-                                            guidance and training, I transitioned from a non-IT background to becoming a
-                                            successful DevOps Engineer. I secured a job I had only dreamt of before.
-                                            Their support and resources are unmatched.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">Vijay K</h5>
-                                        <p class="card-text">I can't thank Rise n Shine Technologies enough for helping
-                                            me land my dream job in AWS Cloud engineer. Their comprehensive training and
-                                            personalized coaching prepared me for success. I'm now enjoying a rewarding
-                                            career I'm passionate about.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-
-                                    <div class="card-body">
-                                        <h5 class="card-title"> Ashok G</h5>
-                                        <p class="card-text">I was stuck in a dead-end job until I found Rise n Shine
-                                            Technologies. Their real-world projects and certifications helped me level
-                                            up my skills in a competitive job market. Now I'm a sought-after DevOps
-                                            professional with a significant salary increase.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">VG D</h5>
-                                        <p class="card-text">The journey to my dream IT job seemed daunting, but Rise n
-                                            Shine Technologies made it achievable. Their flexible training schedules
-                                            allowed me to balance learning with my job. Their guidance and career
-                                            support helped me secure a Cloud Architect role that I'm truly excited
-                                            about.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
+                <div class="col-md-12 padding-top_40">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-body padding-top_40">
+                                    <img src="quotes.png">
+                                    <p class="card-text padding-top_40">Rise n Shine Technologies transformed my career.
+                                        With their
+                                        guidance and training, I transitioned from a non-IT background to becoming a
+                                        successful DevOps Engineer. I secured a job I had only dreamt of before.
+                                        Their support and resources are unmatched.</p>
+                                    <h5 class="card-title padding-top_40">Harsha D</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body padding-top_40">
+                                    <img src="quotes.png">
+                                    <p class="card-text padding-top_40">I can't thank Rise n Shine Technologies enough
+                                        for helping
+                                        me land my dream job in AWS Cloud engineer. Their comprehensive training and
+                                        personalized coaching prepared me for success. I'm now enjoying a rewarding
+                                        career I'm passionate about.</p>
+                                    <h5 class="card-title padding-top_40">Vijay K</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body padding-top_40">
+                                    <img src="quotes.png">
+                                    <p class="card-text padding-top_40">I was stuck in a dead-end job until I found Rise
+                                        n Shine
+                                        Technologies. Their real-world projects and certifications helped me level
+                                        up my skills in a competitive job market. Now I'm a sought-after DevOps
+                                        professional with a significant salary increase.</p>
+                                    <h5 class="card-title padding-top_40"> Ashok G</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body padding-top_40">
+                                    <img src="quotes.png ">
+                                    <p class="card-text padding-top_40">The journey to my dream IT job seemed daunting,
+                                        but Rise n
+                                        Shine Technologies made it achievable. Their flexible training schedules
+                                        allowed me to balance learning with my job. Their guidance and career
+                                        support helped me secure a Cloud Architect role that I'm truly excited
+                                        about.</p>
+                                    <h5 class="card-title padding-top_40">VG D</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="is-pad-t-64"></div>
             </div>
         </div>
     </div>
+    </div>
 
-
+    <div class="is-pad-t-64"></div>
 
 
 
@@ -1856,6 +1868,9 @@
 
 
     <script>
+        function showLeft() {
+            document.getElementById("classShow").style.display = "block";
+        }
         var multipleCardCarousel = document.querySelector("#carouselExampleControls");
 
         if (window.matchMedia("(min-width: 576px)").matches) {
@@ -1866,7 +1881,7 @@
             var cardWidth = $(".carousel-item").width();
             var scrollPosition = 0;
             $("#carouselExampleControls .carousel-control-next").on("click", function () {
-                if (scrollPosition < carouselWidth - cardWidth * 3) {
+                if (scrollPosition < carouselWidth - cardWidth * 2) {
                     scrollPosition += cardWidth;
                     $("#carouselExampleControls .carousel-inner").animate(
                         { scrollLeft: scrollPosition },
