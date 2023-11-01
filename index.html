@@ -30,9 +30,129 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:wght@800&display=swap');
+        /*----------------genealogy-scroll----------*/
+
+        .genealogy-scroll::-webkit-scrollbar {
+            width: 5px;
+            height: 8px;
+        }
+
+        .genealogy-scroll::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: #e4e4e4;
+        }
+
+        .genealogy-scroll::-webkit-scrollbar-thumb {
+            background: #212121;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .genealogy-scroll::-webkit-scrollbar-thumb:hover {
+            background: #d5b14c;
+            transition: 0.5s;
+        }
+
+
+        /*----------------genealogy-tree----------*/
+        .genealogy-body {
+            white-space: nowrap;
+            overflow-y: hidden;
+
+            min-height: 500px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .genealogy-tree {
+            display: inline-block;
+        }
+
+        .genealogy-tree ul {
+            padding-top: 40px;
+            position: relative;
+            padding-left: 0px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .genealogy-tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 40px 0 40px;
+        }
+
+        .genealogy-tree li::before,
+        .genealogy-tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 4px dashed #02c77b;
+            width: 50%;
+            height: 44px;
+        }
+
+        .genealogy-tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 4px dashed #02c77b;
+        }
+
+        .genealogy-tree li:only-child::after,
+        .genealogy-tree li:only-child::before {
+            display: none;
+        }
+
+        .genealogy-tree li:only-child {
+            padding-top: 0;
+        }
+
+        .genealogy-tree li:first-child::before,
+        .genealogy-tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .genealogy-tree li:last-child::before {
+            border-right: 4px dashed #02c77b;
+            border-radius: 0 5px 0 0;
+            -webkit-border-radius: 0 5px 0 0;
+            -moz-border-radius: 0 5px 0 0;
+        }
+
+        .genealogy-tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+            -webkit-border-radius: 5px 0 0 0;
+            -moz-border-radius: 5px 0 0 0;
+        }
+
+        .genealogy-tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 4px dashed #02c77b;
+            width: 0;
+            height: 41px;
+        }
+
+        .genealogy-tree li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 11px;
+            display: inline-block;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+
+
 
         .dsg-nav_wrapper {
             align-items: center;
@@ -700,6 +820,7 @@
             padding: 20px 20px 20px 20px;
             margin: 0 15px 15px 15px;
             border-radius: 25px 25px 25px 25px;
+
         }
 
         .mini_blocks p {
@@ -1009,33 +1130,32 @@
             -webkit-text-fill-color: transparent;
         }
 
-        @media (min-width: 767px) and (max-width: 991px) {
-            .card .carousel-caption h3 {
-                margin-top: 0;
-                font-size: 16px;
-                font-weight: 700;
-            }
-
-            .btn-nav-link {
-                margin-left: 0px;
-                margin-top: 10px;
-            }
-
-            .login_btn {
-                border-radius: 0px;
-                margin-top: 10px;
-            }
-
-            .rns_logo {
-                margin-left: 20px;
-            }
-
-
+        .course_content p {
+            font-family: DM Sans, sans-serif;
+            margin-bottom: 10px !important;
+            font-size: 16px;
+            text-align: left;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 1200px) {
+            .genealogy-tree li {
+                padding: 20px 0px 0 0px !important;
+            }
+
+            .courses_conatiner_block .col-md-4 {
+                margin-left: 10px;
+            }
+        }
+
+        @media (max-width: 1000px) {
             .carousel-caption {
                 position: relative;
+            }
+
+
+
+            .genealogy-tree li {
+                float: none;
             }
 
             .card .carousel-caption {
@@ -1139,7 +1259,23 @@
 
             }
 
+            .genealogy-tree ul {
+                display: block;
+            }
 
+            .genealogy-tree li::after {
+                display: none;
+            }
+
+            .genealogy-tree ul ul::before {
+                height: 100px;
+            }
+
+
+            .genealogy-tree li::before {
+
+                border-top: 0px;
+            }
 
             .about_block_2_img img {
                 display: block;
@@ -1188,6 +1324,39 @@
             }
         }
 
+        @media (min-width: 767px) {
+            .card .carousel-caption h3 {
+                margin-top: 0;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .btn-nav-link {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+
+            .login_btn {
+                border-radius: 0px;
+                margin-top: 10px;
+            }
+
+            .rns_logo {
+                margin-left: 20px;
+            }
+
+            .genealogy-tree li {
+                padding: 20px 0px 0 0px !important;
+            }
+
+            .rns_logo {
+                width: 25%;
+            }
+
+        }
+
+
+
         @media (min-width: 576px) {
             .carousel-item {
                 margin-right: 0;
@@ -1227,11 +1396,7 @@
         </div>
 
     </div>
-    <!-- Navbar Start -->
 
-    <!-- Navbar End -->
-
-    <!-- Header Start -->
 
     <div class="hero03 is-bg-green-50 wf-section ">
         <div class="container-col-12 w-container">
@@ -1288,7 +1453,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
     <!-- Learn Block -->
     <div class="container learn_block  mb-5 ">
@@ -1311,197 +1476,86 @@
 
     <div class="container mb-5">
         <div id="free_course" class="course  rns_bg_white wf-section">
-
             <h2 class="rns_h2 align_cen">The Unique Platform You Need to Skyrocket Your IT Skills to Dream Your IT Job
                 (DYIJ).</h2>
-            <div class="row padding-top">
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Diploma Programs
-                            </h5>
-                            <img src="Diploma.png">
+            <div class=" genealogy-body genealogy-scroll">
+                <div class="genealogy-tree">
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:void(0);" class=" coures_main_block">
+                                <div class=" inner_course_block">
+                                    <h5 class="inner_course_block_heading">Diploma Programs
+                                    </h5>
+                                    <img src="Diploma.png">
 
-                            <div class="course_content">
+                                    <div class="course_content">
+                                        <div class="padding-top_10"></div>
+                                        <p><img src="tag.png"> Identifying Skill Gaps
+                                        </p>
+                                        <p><img src="tag.png"> Learning Skills
+                                        </p>
+                                        <p><img src="tag.png"> Evaluation of Skills
+                                        </p>
 
-                                <div class="padding-top_10"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="col-md-3 coures_main_block">
+                                            <a href="#" target="_blank">
+                                                <div class="inner_course_block">
+                                                    <h5 class="inner_course_block_heading">Portfolio Marketing
+                                                    </h5>
+                                                    <img src="Portfolio.png">
 
-                                <p><img src="tag.png"> Identifying Skill Gaps
+                                                    <div class="course_content">
 
-                                </p>
-                                <p><img src="tag.png"> Learning Skills
+                                                        <div class="padding-top_10"></div>
 
-                                </p>
-                                <p><img src="tag.png"> Evaluation of Skills
-                                </p>
+                                                        <p><img src="tag.png"> Online Presence
+                                                        </p>
+                                                        <p><img src="tag.png"> Placement Assistance Program
 
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Portfolio Marketing
-                            </h5>
-                            <img src="Portfolio.png">
+                                                        </p>
+                                                        <p><img src="tag.png"> Getting Offers
 
-                            <div class="course_content">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="col-md-3 coures_main_block">
+                                            <a href="#" target="_blank">
+                                                <div class="inner_course_block">
+                                                    <h5 class="inner_course_block_heading">Dream Your IT Job</h5>
+                                                    <img src="Dream_it.png">
+                                                    <div class="course_content">
+                                                        <div class="padding-top_10"></div>
+                                                        <p><img src="tag.png"> Diploma Programs </p>
+                                                        <p><img src="tag.png"> Portfolio Marketing</p>
 
-                                <div class="padding-top_10"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </li>
 
-                                <p><img src="tag.png"> Online Presence
-                                </p>
-                                <p><img src="tag.png"> Placement Assistance Program
 
-                                </p>
-                                <p><img src="tag.png"> Getting Offers
+                            </ul>
+                        </li>
 
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Dream Your IT Job</h5>
-                            <img src="Dream_it.png">
-                            <div class="course_content">
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Diploma Programs </p>
-                                <p><img src="tag.png"> Portfolio Marketing</p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- <div class="row padding-top">
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Identifying Skill Gaps</h5>
-                            <img src="identifying_Skill_Gaps_img.png">
-
-                            <div class="course_content">
-
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Self-Assessment </p>
-                                <p><img src="tag.png"> Giving Feedback
-                                </p>
-                                <p><img src="tag.png"> Performance Reviews
-                                </p>
-                                <p><img src="tag.png"> Gap Analysis
-                                </p>
-                                <p><img src="tag.png"> Training Plans
-                                </p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Learning Skills</h5>
-                            <img src="Learning_Skills.png">
-
-                            <div class="course_content">
-
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Structured Learning Path
-                                </p>
-                                <p><img src="tag.png"> Hands-on Practice
-                                </p>
-                                <p><img src="tag.png"> Certifications
-                                </p>
-                                <p><img src="tag.png"> Community Involvement
-                                </p>
-                                <p><img src="tag.png"> Continuous Learning
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Evaluation of Skills</h5>
-                            <img src="Evaluation_of_Skills.png">
-                            <div class="course_content">
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Exercises & Assignments
-                                </p>
-                                <p><img src="tag.png"> Mock Interview Simulators
-                                </p>
-                                <p><img src="tag.png"> Real-World Projects
-                                </p>
-                                <p><img src="tag.png"> Peer and Mentor Feedback
-                                </p>
-                                <p><img src="tag.png"> Certifications
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                    </ul>
                 </div>
             </div>
-            <div class="row padding-top_40">
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Online Presence</h5>
-                            <img src="online_Presence.png">
-                            <div class="course_content">
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Professional Profiles</p>
-                                <p><img src="tag.png"> Personal Website</p>
-                                <p><img src="tag.png"> Content Creation</p>
-                                <p><img src="tag.png"> Networking and Engagement</p>
-                                <p><img src="tag.png"> Online Reputation Management
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Cracking Interview</h5>
-                            <img src="Interview.png">
-                            <div class="course_content">
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Know your skills</p>
-                                <p><img src="tag.png"> Requirements Understanding</p>
-                                <p><img src="tag.png"> Preparing for Interview</p>
-                                <p><img src="tag.png"> HR Interview Skills</p>
-                                <p><img src="tag.png"> Behavioral Skills </p>
-
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 coures_main_block">
-                    <a href="#" target="_blank">
-                        <div class="inner_course_block">
-                            <h5 class="inner_course_block_heading">Getting Job</h5>
-                            <img src="getting_job.png">
-                            <div class="course_content">
-                                <div class="padding-top_10"></div>
-                                <p><img src="tag.png"> Professional Etiquette</p>
-                                <p><img src="tag.png"> Negotiation Strategy</p>
-                                <p><img src="tag.png"> Clarifying Expectations</p>
-                                <p><img src="tag.png"> Written Offer</p>
-                                <p><img src="tag.png"> Acceptance with Gratitude</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div> -->
         </div>
     </div>
-
 
     <!-- Learn Block -->
     <div class="container  mb-5 ">
@@ -1514,15 +1568,20 @@
                     <span class="gr_2">About RISE 'N' SHINE TECHNOLOGIES</span>.
                 </h4>
                 <br>
-                <p> As per the Labour Bureau of India, our country has the highest number of unemployed educated youth -
+                <p> As per the Labour Bureau of India, our country has the highest number of unemployed educated
+                    youth -
                     a staggering 13% of all graduates are unemployed.</p>
-                <p>We identified that the driving factor behind the worrisome number was the gap between skill & formal
-                    education. With corporates continuing to value skills over degree & book knowledge, our education
+                <p>We identified that the driving factor behind the worrisome number was the gap between skill &
+                    formal
+                    education. With corporates continuing to value skills over degree & book knowledge, our
+                    education
                     system fell behind in providing adequate opportunities to our youth. </p>
                 <p> With an aim to bridge this gap & to make our youth more employable, Rise 'n' Shine Technologies,
-                    founded by a team of highly experienced teachers & trainers was formed. Rise 'n' Shine is a platform
+                    founded by a team of highly experienced teachers & trainers was formed. Rise 'n' Shine is a
+                    platform
                     to learn real world skills for both – students & working professionals.</p>
-                <p> With a unique process model that makes learning accessible & convenient to everyone, we plan to make
+                <p> With a unique process model that makes learning accessible & convenient to everyone, we plan to
+                    make
                     you future ready, today!</p>
             </div>
             <div class="col-md-6 about_block_2_img padding-top_10">
@@ -1530,26 +1589,26 @@
                     <span class="gr_3"> Be Part Of Our Community.</span>
                 </h5>
                 <div class="row">
-                    <div class="col-md-6 col-sm-3 col-xs-3">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="mini_blocks">
                             <p class="number"> 11 Years</p>
                             <p class="content_number">Trust in Placement Process</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-3 col-xs-3">
+                    <div class="col-md-6 col-sm-12  col-xs-12">
                         <div class="mini_blocks">
                             <p class="number">7,000+</p>
                             <p class="content_number">Students upskilled
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-3 col-xs-3">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="mini_blocks">
                             <p class="number">4.5</p>
                             <p class="content_number">Average Review Rating</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-3 col-xs-3">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="mini_blocks">
                             <p class="number">20+</p>
                             <p class="content_number">Workshops Offered</p>
@@ -1716,7 +1775,8 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         Our mission is to empower IT freshers and professionals to build their wealth by leveraging
-                        their professional portfolio in DevOps, AWS Cloud, Kubernetes, Python, and Machine Learning to
+                        their professional portfolio in DevOps, AWS Cloud, Kubernetes, Python, and Machine Learning
+                        to
                         secure high-paying jobs and salary hikes.
                     </div>
                 </div>
@@ -1731,7 +1791,8 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        We offer comprehensive training and resources in key IT areas, along with guidance and support
+                        We offer comprehensive training and resources in key IT areas, along with guidance and
+                        support
                         to help you acquire the skills and knowledge needed to land your dream job.
                     </div>
                 </div>
@@ -1762,7 +1823,8 @@
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        No, our programs cater to both IT freshers and professionals. We have courses suitable for all
+                        No, our programs cater to both IT freshers and professionals. We have courses suitable for
+                        all
                         skill levels, and our experienced trainers will guide you regardless of your starting point.
                     </div>
                 </div>
@@ -1809,7 +1871,8 @@
                 <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Our training prepares you for a wide range of roles, including DevOps Engineer, Cloud Architect,
+                        Our training prepares you for a wide range of roles, including DevOps Engineer, Cloud
+                        Architect,
                         Python Developer, Machine Learning Engineer, and more, across various industries.
                     </div>
                 </div>
@@ -1825,7 +1888,8 @@
                 <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Our pricing varies depending on the specific program and the level of support you require. We
+                        Our pricing varies depending on the specific program and the level of support you require.
+                        We
                         offer flexible payment options, including installment plans, to make it accessible to all.
 
                     </div>
@@ -1841,7 +1905,8 @@
                 <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Yes, all our training materials and resources are accessible online, allowing you to learn from
+                        Yes, all our training materials and resources are accessible online, allowing you to learn
+                        from
                         anywhere in the world.
                     </div>
                 </div>
@@ -1856,7 +1921,8 @@
                 <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        To get started, simply explore our website, choose a program that aligns with your career goals,
+                        To get started, simply explore our website, choose a program that aligns with your career
+                        goals,
                         and sign up. You can also reach out to us for any additional information or guidance you may
                         need on your journey to your dream IT job.
                     </div>
@@ -1899,7 +1965,8 @@
                             <div class="card">
                                 <div class="card-body padding-top_40">
                                     <img src="quotes.png">
-                                    <p class="card-text padding-top_40">Rise n Shine Technologies transformed my career.
+                                    <p class="card-text padding-top_40">Rise n Shine Technologies transformed my
+                                        career.
                                         With their
                                         guidance and training, I transitioned from a non-IT background to becoming a
                                         successful DevOps Engineer. I secured a job I had only dreamt of before.
@@ -1912,7 +1979,8 @@
                             <div class="card">
                                 <div class="card-body padding-top_40">
                                     <img src="quotes.png">
-                                    <p class="card-text padding-top_40">I can't thank Rise n Shine Technologies enough
+                                    <p class="card-text padding-top_40">I can't thank Rise n Shine Technologies
+                                        enough
                                         for helping
                                         me land my dream job in AWS Cloud engineer. Their comprehensive training and
                                         personalized coaching prepared me for success. I'm now enjoying a rewarding
@@ -1925,7 +1993,8 @@
                             <div class="card">
                                 <div class="card-body padding-top_40">
                                     <img src="quotes.png">
-                                    <p class="card-text padding-top_40">I was stuck in a dead-end job until I found Rise
+                                    <p class="card-text padding-top_40">I was stuck in a dead-end job until I found
+                                        Rise
                                         n Shine
                                         Technologies. Their real-world projects and certifications helped me level
                                         up my skills in a competitive job market. Now I'm a sought-after DevOps
@@ -1938,7 +2007,8 @@
                             <div class="card">
                                 <div class="card-body padding-top_40">
                                     <img src="quotes.png ">
-                                    <p class="card-text padding-top_40">The journey to my dream IT job seemed daunting,
+                                    <p class="card-text padding-top_40">The journey to my dream IT job seemed
+                                        daunting,
                                         but Rise n
                                         Shine Technologies made it achievable. Their flexible training schedules
                                         allowed me to balance learning with my job. Their guidance and career
