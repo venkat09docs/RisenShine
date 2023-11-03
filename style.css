@@ -25,6 +25,43 @@
     margin: 10px;
 }
 
+.org_clr {
+    color: #f37a0c;
+    font-size: 16px;
+}
+
+.about_me_img img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.purple_clr {
+    color: #f30cb8;
+    font-size: 16px;
+}
+
+.about_me_section p {
+    padding-left: 20px;
+    line-height: 31px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blue_clr {
+    color: #0c20f3;
+    font-size: 16px;
+}
+
+.brown_clr {
+    color: #590613;
+    font-size: 16px;
+}
+
+.green_clr {
+    color: #114d36;
+    font-size: 16px;
+}
+
 .banner_img img {
     width: 400px;
     text-align: center;
