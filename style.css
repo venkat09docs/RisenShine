@@ -19,6 +19,7 @@
     padding: 0px;
     border: 1px solid #e9eaeb;
     border-radius: 2em;
+    border-bottom: 0px !important;
 
 }
 
