@@ -27,7 +27,7 @@
 
 .org_clr {
     color: #f37a0c;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .about_me_img img {
@@ -37,29 +37,32 @@
 
 .purple_clr {
     color: #f30cb8;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .about_me_section p {
     padding-left: 20px;
-    line-height: 31px;
+    line-height: 34px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 18px;
+
+    text-align: left;
 }
 
 .blue_clr {
     color: #0c20f3;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .brown_clr {
     color: #590613;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .green_clr {
     color: #114d36;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .banner_img img {
@@ -921,8 +924,8 @@ a {
 .mini_blocks {
     text-align: center;
     background-color: #020a25 !important;
-    padding: 20px 20px 20px 20px;
-    margin: 0 15px 15px 15px;
+    padding: 40px 20px 40px 20px;
+    margin: 20px 15px 15px 15px;
     border-radius: 25px 25px 25px 25px;
 
 }
@@ -960,7 +963,7 @@ a {
 }
 
 .content_number {
-    font-size: 14px !important;
+    font-size: 20px !important;
 }
 
 .copy_write {
