@@ -6,6 +6,80 @@
     display: flex;
 }
 
+.banner_card {
+    background: linear-gradient(247.76deg, rgba(82, 229, 252, 0.5) -2.18%, rgba(2, 28, 120, 0.5) -2.17%, rgba(1, 91, 91, 0.5) 100.01%), linear-gradient(0deg, rgba(33, 41, 55, 0.5), rgba(33, 41, 55, 0.5)),
+        url(https://static1.tothenew.com/sites/default/files/2020-08/Devops-as-a-service.png);
+    background-size: cover;
+    background-position: right bottom 24%;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.curriculum_block {
+    padding: 0px;
+    border: 1px solid #e9eaeb;
+    border-radius: 2em;
+
+}
+
+.coursecurriculum_card-header {
+    background-color: #212937;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    display: flex;
+}
+
+
+.static_bar {
+    border: 1px solid #02c77b;
+    border-radius: 1.5em;
+    padding: 2em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5.5em;
+}
+
+.download-icon {
+    width: 19px;
+    height: 24px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.coursecurriculum-info {
+    grid-column-gap: 0.75em;
+    align-items: center;
+    display: flex;
+}
+
+.download-curriculum {
+    grid-column-gap: 0.5em;
+    align-items: center;
+    display: flex;
+}
+
+.curriculum_block.accordion-item:first-of-type .accordion-button {
+    border: 0px;
+}
+
+.curriculum_block.accordion-item {
+    border-radius: 0px;
+}
+
+.banner_content {
+    border-radius: 2em;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    display: flex;
+}
+
 .prg_block {
     background-color: rgb(3 10 201);
     border: 1px solid #02c77b;
@@ -80,6 +154,10 @@
     grid-template-rows: auto;
     grid-template-columns: 64px 1fr;
     align-items: center;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
 }
 
 .solution_block_inner {
@@ -759,14 +837,24 @@ a {
     font-size: 14px
 }
 
+.banner_content p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
 .is-h2 {
     font-family: Raleway, sans-serif;
     font-size: 3em;
     font-style: normal;
     font-weight: 800;
+
     line-height: 1.2;
 }
 
+.is-h2.white_clr {
+    color: #fff;
+}
 
 .is-h6 {
     font-family: Raleway, sans-serif;
