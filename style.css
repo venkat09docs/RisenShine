@@ -1,1164 +1,1486 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:wght@800&display=swap');
 
-<head>
-    <meta charset="utf-8">
-    <title>Rise `N` Shine Technologies</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-    <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="customscript.js"></script>
-    <style>
-        .inner_course_block {
-            width: 100% !important;
-        }
+/*----------------genealogy-scroll----------*/
+.solution_block {
+    display: flex;
+}
 
-        .rns_h2 {
-            font-size: 2em;
-        }
+.prg_block {
+    background-color: rgb(3 10 201);
+    border: 1px solid #02c77b;
+    border-radius: 1.5em;
+    font-family: Raleway, sans-serif;
+    padding: 40px 30px;
+    width: 280px;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+    color: #fff !important;
+}
 
-        .genealogy-tree li {
-            padding: 20px 0px 0 0px;
-        }
+.solution_block_inner {
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5em;
+    display: flex;
+    margin: 10px;
+}
 
-        .genealogy-body {
-            min-height: auto !important;
-        }
+.org_clr {
+    color: #f37a0c;
+    font-size: 18px;
+}
 
-        .genealogy-tree li.updated_cls {
-            padding: 20px 20px 20px 20px;
-        }
+.about_me_img img {
+    border-radius: 25px;
+    width: 100%;
+}
 
-        .inner_course_block.height_reduce {
-            height: 300px;
-        }
+.purple_clr {
+    color: #f30cb8;
+    font-size: 18px;
+}
 
-        .inner_course_block .img_width {
-            width: 320px;
-        }
+.about_me_section p {
+    padding-left: 20px;
+    line-height: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
 
-        .coures_main_block.height_reduce {
-            height: 100px !important;
-        }
+    text-align: left;
+}
 
-        .inner-box {
+.blue_clr {
+    color: #0c20f3;
+    font-size: 18px;
+}
 
-            border: 2px solid #02c77b;
-            border-radius: 10px;
-        }
+.brown_clr {
+    color: #590613;
+    font-size: 18px;
+}
 
-        .inner-box.no_border {
-            border: 0px;
-        }
+.green_clr {
+    color: #114d36;
+    font-size: 18px;
+}
 
-        .innerheading {
-            padding: 20px;
-            text-align: center;
-            background-color: #02c77b;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 600;
+.banner_img img {
+    width: 400px;
+    text-align: center;
+}
+
+.bullet_point {
+    display: flex;
+    align-items: center;
+}
+
+.grid2 {
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+.solution_block_inner {
+    background-color: rgba(2, 199, 123, .2);
+    border: 1px solid #02c77b;
+    border-radius: 1.5em;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+}
+
+.h3_font {
+    text-transform: capitalize;
+    font-family: Raleway, sans-serif;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    display: block;
+    margin-left: 20px;
+}
+
+.text-span {
+    font-size: .4em;
+    font-weight: 400;
+    line-height: .5;
+}
+
+.heading_h3 {
+    font-family: Raleway, sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.media_icons img {
+    width: 20% !important;
+}
+
+.media_icons img.reduce {
+    width: 18% !important;
+}
+
+.points_css {
+    background-color: #02c77b;
+    border-radius: 25px;
+    height: 38px;
+    width: 46px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.genealogy-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+.inner_course_block.height_reduce {
+    height: 367px;
+}
+
+.genealogy-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+
+.genealogy-scroll::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.genealogy-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d5b14c;
+    transition: 0.5s;
+}
+
+
+/*----------------genealogy-tree----------*/
+.genealogy-body {
+    white-space: nowrap;
+    overflow-y: hidden;
+
+    min-height: 500px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.genealogy-tree {
+    display: inline-block;
+}
+
+.genealogy-tree ul {
+    padding-top: 40px;
+    position: relative;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.genealogy-tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 30px 0 30px;
+}
+
+.genealogy-tree li::before,
+.genealogy-tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 4px dashed #02c77b;
+    width: 50%;
+    height: 44px;
+}
+
+.genealogy-tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 4px dashed #02c77b;
+}
+
+.genealogy-tree li:only-child::after,
+.genealogy-tree li:only-child::before {
+    display: none;
+}
+
+.genealogy-tree li:only-child {
+    padding-top: 0;
+}
+
+.genealogy-tree li:first-child::before,
+.genealogy-tree li:last-child::after {
+    border: 0 none;
+}
+
+.genealogy-tree li:last-child::before {
+    border-right: 4px dashed #02c77b;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+
+.genealogy-tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+.genealogy-tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 4px dashed #02c77b;
+    width: 0;
+    height: 41px;
+}
+
+.genealogy-tree li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+
+
+.dsg-nav_wrapper {
+    align-items: center;
+    display: flex;
+}
+
+.navbar .col-md-4 {
+    padding: 0px;
+}
+
+.navbar .col-md-12 {
+    padding: 0px;
+}
+
+.padding_rt a {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    font-family: 'DM Sans', sans-serif;
+    color: #212937;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    align-items: start;
+    justify-content: start;
+}
+
+.login_btn {
+    color: #fff !important;
+    text-align: center;
+    background-color: #02c77b;
+    border-radius: 12rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: all .6s cubic-bezier(.23, 1, .32, 1);
+    box-shadow: 0 0 0 0 #92b22f;
+}
+
+.btn-nav-link {
+    color: #02c77b !important;
+    background-color: #e7fef8;
+    border-radius: 0.25em;
+    padding: 0.5em 1.25em;
+    font-family: DM Sans, sans-serif;
+    font-size: 1rem;
+
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #222;
+}
+
+.btn--prm-sm:hover {
+    background-color: #02c77b;
+    box-shadow: 0 0 0 0.4rem rgba(2, 199, 123, .5);
+}
+
+.is-pad-tb-80 {
+    padding-top: 8em !important;
+    padding-bottom: 8em !important;
+    display: block;
+}
+
+.hero-caption {
+    background-color: #b9f3df;
+    border-radius: 0.5em;
+    padding: 0.25em 0.75em;
+}
+
+.rns-w-fc {
+    width: fit-content;
+}
+
+.navbar-toggler {
+    float: right;
+    margin-top: 20px;
+}
+
+.rns-h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 3.75em;
+    font-style: normal;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.2;
+    color: #212937;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+.rns-txt-gradient {
+    background: linear-gradient(90deg, #52E5FC 17.14%, #02C77B 63.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hero03.is-bg-green-50 {
+    background-image: url('6421ddc6eb9b437f41d20892_vv (2).jpg');
+    background-position: 0 0;
+    background-size: cover;
+    display: block;
+}
+
+p {
+    font-family: DM Sans, sans-serif;
+    margin-bottom: 10px !important;
+}
+
+.fa-check-square {
+    color: #007bff;
+}
+
+.is-txt-medium {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.hero_cta-wrap {
+    grid-column-gap: 1.5em;
+    display: flex;
+}
+
+.inner_course_block img {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn--sec-med {
+    color: #e7e7e7;
+    text-align: center;
+    background-color: #181818;
+    border-radius: 12em;
+    justify-content: center;
+    align-items: center;
+    padding: 1.35rem 2.55rem;
+    font-size: 1rem;
+    margin-top: 16px;
+    display: inline-block;
+    font-weight: 700;
+    transition: all .3s linear;
+    box-shadow: 0 0 0 0.2rem #02c77b;
+}
+
+.btn--sec-med.bottom_btn {
+    padding: 16px 1.4rem;
+}
+
+.btn--sec-med:hover {
+    background-color: #111;
+    box-shadow: 0 0 0 0.4rem rgba(2, 199, 123, .5);
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.bold_green {
+    font-weight: 600;
+    color: #02c77b;
+}
+
+.rns_bg_white {
+    background-color: #fff;
+}
+
+.align_cen {
+    text-align: center;
+}
+
+.rns_h2 {
+    font-family: Raleway, sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.is-pad-t-64 {
+    padding-top: 5em;
+}
+
+.grid--4-4-4 {
+    width: 100%;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.course_card {
+    background-color: rgba(2, 199, 123, .2);
+    border: 1px solid #02c77b;
+    border-radius: 1.5em;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+}
+
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.internship_heading {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.course_img {
+    width: 107%;
+    border-radius: 7px;
+    margin-left: -12px;
+}
+
+.course_block {
+    text-align: center;
+    margin: 30px 0px;
+    background-color: rgba(2, 199, 123, .2);
+    border: 1px solid #02c77b;
+    border-radius: 1.5em;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+}
+
+.internship_heading h4 {
+    padding: 20px 20px;
+    padding-top: 40px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.about_heading {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: Raleway, sans-serif;
+}
+
+.apply_now_btn {
+    background-image: linear-gradient(to right, #28e98c, #173140, #1d5e55, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    /* opacity: 0; */
+    color: #fff;
+    padding: 10px 20px;
+    /* visibility: hidden; */
+}
+
+.course_block:hover .apply_now_btn {
+    background-image: linear-gradient(to right, #28e98c, #173140, #1d5e55, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.course_block h6 {
+    padding: 10px 30px;
+}
+
+.reduce_font {
+    padding: 10px 30px;
+}
+
+.course_block img {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.reduce_font {
+    font-size: 14px;
+    text-align: left;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.inner_course_block {
+    background-color: rgb(143 185 235 / 32%);
+    border: 1px solid #ff800761;
+    border-radius: 1.5em;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    height: 476px;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+}
+
+.coures_main_block .inner_course_block_heading {
+    padding: 1em;
+    text-align: center;
+}
+
+.coures_main_block .course_content {
+    padding: 1.5em;
+    text-transform: capitalize;
+    font-family: Raleway, sans-serif;
+
+}
+
+.coures_main_block a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Raleway, sans-serif;
+    color: #000;
+}
+
+.padding-top_10 {
+    padding-top: 20px;
+}
+
+.learn_block {
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+/* .learn_block_text {
+            padding: 20px 30px !important;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
             color: #fff;
-            border-radius: 5px;
-            margin-top: -1px;
-        }
-
-        .innertable td {
-            padding-bottom: 10px;
-            vertical-align: top;
-            padding-top: 10px;
-
-        }
-
-        .innerhead {
-            background-color: #fff;
-            border-radius: 1.5em;
-
-        }
-
-        .innerhead table {
-            margin: auto;
-        }
-
-        .inner_course_block {
-            height: 576px;
-        }
-
-        .learn_block_text {
-            display: block;
-        }
-
-        .learn_block_text p {
-            font-size: 20px;
-            padding-bottom: 10px;
-            line-height: 31px;
-            font-weight: 400;
-            text-transform: capitalize;
-        }
-
-        tr:nth-child(even) {
-            background-color: #232e231f;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #cbb92221;
-        }
-
-        tr {
-            margin: 5px 0;
-            border-bottom: 2px solid #fff;
-        }
-
-        td {
-            padding: 10px 10px;
-
-        }
-
-        /* .course_content p {
-font-size: 13px;
-} */
-    </style>
-</head>
-
-<body>
-    <div class="fixed-top bg-light shadow-sm ">
-        <div class="container-col-12">
-            <nav class="navbar navbar-expand-lg  dsg-nav_wrapper ">
-                <a class="navbar-brand col-md-4" href="https://venkat09docs.github.io/risenshine/ ">
-                    <img src="logo.png" class="rns_logo"></img>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </a>
-                <div class="collapse navbar-collapse col-md-8 padding_rt" id="navbarCollapse">
-                    <div class="navbar-nav  py-0 padding_rt">
-                        <a href="https://venkat09docs.github.io/risenshine/ " class="nav-item nav-link active">Home</a>
-                        <a href="https://venkat09docs.github.io/risenshine/Diploma_Programs.html"
-                            class="nav-item nav-link">Diploma Program</a>
-                        <a href="#" class="nav-item nav-link">Portfolio Marketing</a>
-                        <a href="#" class="nav-item nav-link"><span class="btn-nav-link">👑 DYIJ Programs </span></a>
-                        <a target="_blank" href="https://lhs.risenshinetechnologies.com/web/login"
-                            class="nav-item nav-link "><span class="login_btn btn--prm-sm w-button">Login</span></a>
-            </nav>
-        </div>
-
-    </div>
-
-
-    <div class="hero03 is-bg-green-50 wf-section ">
-        <div class="container-col-12 w-container">
-            <div class=" d-flex is-pad-tb-80 align-items-center mb-5" id="home">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 text-center text-lg-left padding-top">
-                        <div class="hero-caption rns-w-fc">
-                            <div class="rns-txt-small" style="color: #212937;">Bridge Your IT Skill Gaps with Our
-                                Diploma Programs 🚀
-                            </div>
-                        </div>
-                        <div class="padding-top"></div>
-                        <h1 class="rns-h1">Bridge Your <span class="rns-txt-gradient">IT Skill Gaps with Our</span>
-                            <span class="rns-txt-gradient">Diploma Programs</span>
-                        </h1>
-                        <div class="padding-top"></div>
-                        <p class="is-txt-medium">
-                            "Unlock Your IT Potential with Our Diploma Programs. We identify skill gaps, offer expert
-                            instruction, hands-on experience, career-boosting certifications, and LMS Application to
-                            access the resources Online."
-                        </p>
-                        <div class="bullet_points is-txt-medium">
-
-                            <p><img src="checkboxes.png"> Skill gap identification</p>
-                            <p><img src="checkboxes.png"> Personalized Skill Development</p>
-                            <p><img src="checkboxes.png"> Skill Evaluation Programs</p>
-                            <p><img src="checkboxes.png"> Hands-On Learning with Lab Guides</p>
-                            <p><img src="checkboxes.png"> Certifications for Career Growth</p>
-                            <p><img src="checkboxes.png"> Flexible Learning Options.</p>
-
-                        </div>
-                        <div class="hero_cta-wrap is-pad-t-32 padding-top"><a
-                                href="https://lhs.risenshinetechnologies.com/web/sign-up" target="_blank"
-                                class="btn--sec-med is-btn-p-fw w-button">Sign-Up for Free Demo Videos</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 banner_img">
-                        <img src="book_cover_9.png" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container learn_block  mb-5 ">
-        <div class="is-pad-t-64"></div>
-        <h2 class="rns_h2 align_cen">RNS Diploma – Unique Process Model.</h2>
-        <div class="padding-top"></div>
-        <div class="row">
-            <div class="col-md-6 learn_block_img" style=" padding:20px 0px;  background-color: #000135;    border-top-left-radius: 25px;
-border-bottom-left-radius: 25px;text-align: center;">
-                <img src="Diploma_Programs.png" alt="">
-            </div>
-            <div class="col-md-6 learn_block_text">
-                <p>
-                    Let’s talk about <span class="gr_2"><b>RNS DYIJ Journey Internship Program</b></span> With
-                    Diploma IT Programs</p>
-                <h4>
-                    THE THREE STEPS UNIQUE PROCESS MODEL <br>
-                    <span class="gr_2">TO BRIDGE YOUR IT SKILL GAPS</span>.
-                </h4>
-
-            </div>
-        </div>
-        <div class="is-pad-t-64"></div>
-    </div>
-    <div class="container mb-5">
-        <div id="free_course" class="course  rns_bg_white wf-section">
-            <h2 class="rns_h2 align_cen">What solutions you will create when you join Diploma Programs?</h2>
-        </div>
-        <div class="padding-top_10"></div>
-        <div class="solution_block">
-            <div class="col-md-4 solution_block_inner">
-                <div class="bullet_point">
-                    <p class="points_css">1</p>
-                    <h3 class="h3_font">Identifying Skill Gaps</h3>
-                </div>
-                <div class="padding-top_10"></div>
-                <p><img src="tag.png"> Self-Assessment </p>
-                <p><img src="tag.png"> Giving Feedback
-                </p>
-                <p><img src="tag.png"> Performance Reviews
-                </p>
-                <p><img src="tag.png"> Gap Analysis
-                </p>
-                <p><img src="tag.png"> Training Plans
-                </p>
-            </div>
-            <div class="col-md-4 solution_block_inner">
-                <div class="bullet_point">
-                    <p class="points_css">2</p>
-                    <h3 class="h3_font">Learning Skills</h3>
-                </div>
-                <div class="padding-top_10"></div>
-                <p><img src="tag.png"> Structured Learning Path
-                </p>
-                <p><img src="tag.png"> Hands-on Practice
-                </p>
-                <p><img src="tag.png"> Certifications
-                </p>
-                <p><img src="tag.png"> Community Involvement
-                </p>
-                <p><img src="tag.png"> Continuous Learning
-                </p>
-            </div>
-            <div class="col-md-4 solution_block_inner">
-                <div class="bullet_point">
-                    <p class="points_css">3</p>
-                    <h3 class="h3_font">Evaluation of Skills</h3>
-                </div>
-                <div class="padding-top_10"></div>
-                <p><img src="tag.png"> Exercises & Assignments
-                </p>
-                <p><img src="tag.png"> Mock Interview Simulators
-                </p>
-                <p><img src="tag.png"> Real-World Projects
-                </p>
-                <p><img src="tag.png"> Peer and Mentor Feedback
-                </p>
-                <p><img src="tag.png"> Certifications
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="padding-top"></div>
-    <div class="container mb-5">
-        <div id="free_course" class="course  rns_bg_white wf-section">
-            <h2 class="rns_h2 align_cen">The Unique Platform You Need to Skyrocket Your Continuous Learning and
-                Evaluation to Bridge the Gaps on your IT Skills.</h2>
-        </div>
-
-        <div class="genealogy-body genealogy-scroll">
-            <div class="genealogy-tree">
-                <ul class="active">
-                    <li>
-
-                        <a href="javascript:void(0);" class=" coures_main_block">
-                            <div class="inner_course_block height_reduce">
-                                <h5 class="inner_course_block_heading">Diploma Programs</h5>
-                                <img class="img_width" src="Dream_it.png">
-
-                            </div>
-
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="col-md-4 coures_main_block">
-                                        <a href="#" target="_blank">
-                                            <div class="inner_course_block">
-                                                <h5 class="inner_course_block_heading">Diploma in IT –<br>
-                                                    Foundations Program
-                                                </h5>
-                                                <img class="img_width" src="skill_set_1.png">
-
-                                                <div class="course_content">
-
-                                                    <div class="padding-top_10"></div>
-                                                    <p><img src="tag.png"> Self-Assessment </p>
-                                                    <p><img src="tag.png"> Giving Feedback
-                                                    </p>
-                                                    <p><img src="tag.png"> Performance Reviews
-                                                    </p>
-                                                    <p><img src="tag.png"> Gap Analysis
-                                                    </p>
-                                                    <p><img src="tag.png"> Training Plans
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="col-md-4 coures_main_block">
-                                        <a href="#" target="_blank">
-                                            <div class="inner_course_block">
-                                                <h5 class="inner_course_block_heading">Diploma in IT –<br>
-                                                    Mastery Program
-
-                                                </h5>
-                                                <img class="img_width" src="skill_set_2.png">
-
-                                                <div class="course_content">
-
-                                                    <div class="padding-top_10"></div>
-                                                    <p><img src="tag.png"> Structured Learning Path
-                                                    </p>
-                                                    <p><img src="tag.png"> Hands-on Practice
-                                                    </p>
-                                                    <p><img src="tag.png"> Certifications
-                                                    </p>
-                                                    <p><img src="tag.png"> Community Involvement
-                                                    </p>
-                                                    <p><img src="tag.png"> Continuous Learning
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <div class="col-md-4 coures_main_block">
-                                        <a href="#" target="_blank">
-                                            <div class="inner_course_block">
-                                                <h5 class="inner_course_block_heading">Diploma in IT –<br>
-                                                    PG Program
-
-                                                </h5>
-                                                <img class="img_width" src="skill_set_3.png">
-                                                <div class="course_content">
-                                                    <div class="padding-top_10"></div>
-                                                    <p><img src="tag.png"> Exercises & Assignments
-                                                    </p>
-                                                    <p><img src="tag.png"> Mock Interview Simulators
-                                                    </p>
-                                                    <p><img src="tag.png"> Real-World Projects
-                                                    </p>
-                                                    <p><img src="tag.png"> Peer and Mentor Feedback
-                                                    </p>
-                                                    <p><img src="tag.png"> Certifications
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mb-5 container-col-12" style="background-color: #e7fef8;    padding: 0px 38px;">
-        <div class="padding-top_40"></div>
-        <div id="free_course" class="course   wf-section">
-            <h2 class="rns_h2 align_cen">DYIJ - Diploma Programs (DP)</h2>
-        </div>
-        <div class="padding-top"></div>
-        <div class="program_block">
-            <div class="row">
-                <div class="col-md-4" style="padding-bottom:10px;">
-                    <div class="inner-box no_border">
-                        <div class="innerhead">
-                            <h5 class="innerheading">
-                                Foundations Program</h5>
-                            <div class="innertable" style="padding:14px;">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p class="org_clr ">
-                                                    <b> <i class="fa fa-tasks" aria-hidden="true"></i> Role
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> AWS Cloud Engineer<br>AWS DevOps Engineer
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="purple_clr"><b> <i class="fa fa-street-view"
-                                                            aria-hidden="true"></i> Learning
-                                                        Path </b></p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> AWS Cloud Engineer <br>AWS DevOps Engineer
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="blue_clr">
-                                                    <b> <i class="fa fa-gift" aria-hidden="true"></i> Bonuses
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> Programming Basics<br>
-                                                    Linux Admin for Cloud<br>
-                                                    Shell Scripting
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="green_clr">
-                                                    <b><i class="fa fa-laptop"></i> Real Time
-                                                        Projects
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> 3 Projects
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="brown_clr">
-                                                    <b><i class="fa fa-calendar" aria-hidden="true"></i> Duration
-
-
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> 3 Months
-                                                </p>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" style="padding-bottom:10px;">
-                    <div class="inner-box">
-                        <div class="innerhead">
-                            <h5 class="innerheading" style="background-color:#030ac9;">
-                                Masters Program</h5>
-                            <div class="innertable" style="padding:14px;">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p class="org_clr ">
-                                                    <b> <i class="fa fa-tasks" aria-hidden="true"></i> Role
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> AWS Serverless
-                                                    <br>Solution<br>
-                                                    Python AWS<br>
-
-                                                    Developer
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="purple_clr"><b> <i class="fa fa-street-view"
-                                                            aria-hidden="true"></i> Learning
-                                                        Path </b></p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> AWS Docker & K8s Services
-                                                    <br>AWS Dev with Python<br>
-                                                    DevSecOps & SRE
-
-
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="blue_clr">
-                                                    <b> <i class="fa fa-gift" aria-hidden="true"></i> Bonuses
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> ChatGPT for Developers
-                                                    <br>
-                                                    Python Programming
-                                                    <br>
-                                                    Troubleshooting Skills<br>
-                                                    Soft Skills Development<br>
-                                                    Communication Skills<br>
-                                                    Mock Interview Simulators<br>
-                                                    Skills Assessment
-
-
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="green_clr">
-                                                    <b><i class="fa fa-laptop"></i> Real Time
-                                                        Projects
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> 2 Projects
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="brown_clr">
-                                                    <b><i class="fa fa-calendar" aria-hidden="true"></i> Duration
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> 6 Months
-                                                </p>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="inner-box no_border">
-                        <div class="innerhead">
-                            <h5 class="innerheading">
-                                PG Program</h5>
-                            <div class="innertable" style="padding:14px;">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <p class="org_clr ">
-                                                    <b> <i class="fa fa-tasks" aria-hidden="true"></i> Role
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> AWS Data Engineer
-                                                    <br>AWS ML Engineer
-
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="purple_clr"><b> <i class="fa fa-street-view"
-                                                            aria-hidden="true"></i> Learning
-                                                        Path </b></p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> AWS Data Engineer
-                                                    <br>AWS ML Services
-
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="blue_clr">
-                                                    <b> <i class="fa fa-gift" aria-hidden="true"></i> Bonuses
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p>DS & Algorithms
-                                                    <br>
-                                                    DB Fundamentals
-                                                    <br>
-                                                    AI Tools
-
-
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="green_clr">
-                                                    <b><i class="fa fa-laptop"></i> Real Time
-                                                        Projects
-
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> 2 Projects
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 160px !important;">
-                                                <p class="brown_clr">
-                                                    <b><i class="fa fa-calendar" aria-hidden="true"></i> Duration
-                                                    </b>
-                                                </p>
-                                            </td>
-                                            <td>
-                                                <p>:</p>
-                                            </td>
-                                            <td>
-                                                <p> 12 Months
-
-                                                </p>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="padding-top_40"></div>
-    </div>
-
-    <div class="container padding-top">
-
-        <h2 class="is-h2 is-txt-align-center" style="text-align: center;">Frequently Asked Questions</h2>
-        <div class="accordion accd_style" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button faq_text is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What is the mission of Rise n Shine Technologies?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Our mission is to empower IT freshers and professionals to build their wealth by leveraging
-                        their professional portfolio in DevOps, AWS Cloud, Kubernetes, Python, and Machine Learning
-                        to
-                        secure high-paying jobs and salary hikes.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How can Rise n Shine Technologies help me achieve my dream IT job?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        We offer comprehensive training and resources in key IT areas, along with guidance and
-                        support
-                        to help you acquire the skills and knowledge needed to land your dream job.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        What makes your training programs unique?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Our programs are designed to bridge the gap between theory and practical skills. We provide
-                        hands-on experience through real-world projects, industry-relevant certifications, and
-                        personalized coaching to ensure your success.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Do I need prior IT experience to benefit from your programs?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        No, our programs cater to both IT freshers and professionals. We have courses suitable for
-                        all
-                        skill levels, and our experienced trainers will guide you regardless of your starting point.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        How long does it typically take to complete your training programs?
-
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        The duration varies depending on the specific program, but we offer flexible options to
-                        accommodate your schedule, whether you're looking for intensive training or a more gradual
-                        learning path.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Are there any job placement services or assistance after completing your programs?
-                    </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Yes, we provide job placement support, including resume reviews, interview preparation, and
-                        access to job postings within our network of partner companies.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        What industries or roles can I pursue after completing your training?
-                    </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Our training prepares you for a wide range of roles, including DevOps Engineer, Cloud
-                        Architect,
-                        Python Developer, Machine Learning Engineer, and more, across various industries.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        What is the cost of your training programs?
-
-                    </button>
-                </h2>
-                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Our pricing varies depending on the specific program and the level of support you require.
-                        We
-                        offer flexible payment options, including installment plans, to make it accessible to all.
-
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        Can I access your training materials and resources remotely?
-                    </button>
-                </h2>
-                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Yes, all our training materials and resources are accessible online, allowing you to learn
-                        from
-                        anywhere in the world.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed is-h6" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        How do I get started with Rise n Shine Technologies?
-                    </button>
-                </h2>
-                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        To get started, simply explore our website, choose a program that aligns with your career
-                        goals,
-                        and sign up. You can also reach out to us for any additional information or guidance you may
-                        need on your journey to your dream IT job.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- testimonial checking -->
-
-    <!-- Testimonial Block -->
-    <div class="is-pad-t-64"></div>
-    <div class="testimonial-slider">
-        <div class="is-pad-t-64"></div>
-        <div id="carouselExampleControls" class="carousel carousel-dark">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="testimonial-title">
-                            <i class="bi bi-quote display-1"></i>
-                            <h2 class="fw-bold display-6" style="text-align: center;">Testimonials</h2>
-                        </div>
-                        <button class="carousel-control-prev" id="classShow" type="button"
-                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <i class="fa fa-angle-left" aria-hidden="true" style="color: #fff;    font-size: 34px;"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" onclick="showLeft()"
-                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <i class="fa fa-angle-right" aria-hidden="true"
-                                style="color: #fff;    font-size: 34px;"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-
-                    </div>
-                </div>
-                <div class="col-md-12 padding-top_40">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card">
-                                <div class="card-body padding-top_40">
-                                    <img src="quotes.png">
-                                    <p class="card-text padding-top_40">Rise n Shine Technologies transformed my
-                                        career.
-                                        With their
-                                        guidance and training, I transitioned from a non-IT background to becoming a
-                                        successful DevOps Engineer. I secured a job I had only dreamt of before.
-                                        Their support and resources are unmatched.</p>
-                                    <h5 class="card-title padding-top_40">Harsha D</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card-body padding-top_40">
-                                    <img src="quotes.png">
-                                    <p class="card-text padding-top_40">I can't thank Rise n Shine Technologies
-                                        enough
-                                        for helping
-                                        me land my dream job in AWS Cloud engineer. Their comprehensive training and
-                                        personalized coaching prepared me for success. I'm now enjoying a rewarding
-                                        career I'm passionate about.</p>
-                                    <h5 class="card-title padding-top_40">Vijay K</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card-body padding-top_40">
-                                    <img src="quotes.png">
-                                    <p class="card-text padding-top_40">I was stuck in a dead-end job until I found
-                                        Rise
-                                        n Shine
-                                        Technologies. Their real-world projects and certifications helped me level
-                                        up my skills in a competitive job market. Now I'm a sought-after DevOps
-                                        professional with a significant salary increase.</p>
-                                    <h5 class="card-title padding-top_40"> Ashok G</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card-body padding-top_40">
-                                    <img src="quotes.png ">
-                                    <p class="card-text padding-top_40">The journey to my dream IT job seemed
-                                        daunting,
-                                        but Rise n
-                                        Shine Technologies made it achievable. Their flexible training schedules
-                                        allowed me to balance learning with my job. Their guidance and career
-                                        support helped me secure a Cloud Architect role that I'm truly excited
-                                        about.</p>
-                                    <h5 class="card-title padding-top_40">VG D</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="is-pad-t-64"></div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="is-pad-t-64"></div>
-
-
-
-    <!-- Copywrite -->
-
-    <div class="main_footer">
-        <div class="container-col-12 footer_alignment padding_classes" style="background-color: #212937;">
-            <div class="footer">
-                <div class="top_block" style="padding-top:40px;">
-                    <div class="row">
-                        <div class="col-md-8 footer_logo">
-                            <img src="logo.png"></img>
-                            <br>
-                            <h3 class="heading_h3">Download App <span class="text-span ">(iOS Coming Soon)</span></h3>
-                            <div class="padding-top"></div>
-                            <a target="_blank"
-                                href="https://play.google.com/store/apps/details?id=com.tagmango.risenshine&pcampaignid=web_share"
-                                class="media_icons"><img src="google_play.png" loading="lazy" alt=""
-                                    class="footer_app-img"></a>
-                            <a target="_blank" href="#" class="media_icons reduce"><img src="app_store.png"
-                                    loading="lazy" alt=""></a>
-                        </div>
-                        <div class="col-md-4">
-                            <p>
-                                Need any Help?
-                            </p>
-                            <p>
-                                <a href="mailto: risenshinetech@gmail.com"> risenshinetech@gmail.com</a>
-                            </p>
-                            <p class="padding-top_10">
-                                For further information please visit:</p>
-                            <p>
-                                <a href="https://risenshinetechnologies.com/privacy-policy-2/" target="_blank">PRIVACY
-                                    POLICY</a> | <a href="https://risenshinetechnologies.com/terms-conditions/"
-                                    target="_blank">
-                                    TERMS & CONDITIONS
-                                </a>
-                            </p>
-                            <p class="padding-top_10">
-                                We would love you hear from you!
-
-                            </p>
-                            <p>
-                                <a href="#" target="_blank">Feedback
-                                </a>
-                            </p>
-                            <img src="logo.png" class="footer_bg_logo"></img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="main_footer_1">
-        <div class="container-col-12 footer_content">
-            <div class="bottom_block">
-                <div class="row ">
-                    <div class="col-md-4">
-                        <p> © 2023 RNS. All rights reserved.</p>
-                    </div>
-
-                    <div class="col-md-8">
-                        <div class="social_media_icons">
-                            <p class="footer_icon_block"><a class="a_tag_black"
-                                    href="https://www.instagram.com/risenshinetechnologies" target="_blank"><i
-                                        class="fa fa-instagram" aria-hidden="true"></i></a></p>
-                            <p class="footer_icon_block" style="margin-left:0px;"><a class="a_tag_black" target="_blank"
-                                    href="https://www.facebook.com/RiseNShineTechnologies//"><i class="fa fa-facebook"
-                                        aria-hidden="true"></i></a></p>
-                            <p class="footer_icon_block"><a class="a_tag_black" target="_blank"
-                                    href="https://www.youtube.com/@devopswithcloudandAI"><i class="fa fa-youtube-play"
-                                        aria-hidden="true"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script>
-
-        function showLeft() {
-            document.getElementById("classShow").style.display = "block";
-        }
-        var multipleCardCarousel = document.querySelector("#carouselExampleControls");
-
-        if (window.matchMedia("(min-width: 576px)").matches) {
-            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-                interval: false
-            });
-            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-            var cardWidth = $(".carousel-item").width();
-            var scrollPosition = 0;
-            $("#carouselExampleControls .carousel-control-next").on("click", function () {
-                if (scrollPosition < carouselWidth - cardWidth * 2) {
-                    scrollPosition += cardWidth;
-                    $("#carouselExampleControls .carousel-inner").animate(
-                        { scrollLeft: scrollPosition },
-                        600
-                    );
-                }
-            });
-            $("#carouselExampleControls .carousel-control-prev").on("click", function () {
-                if (scrollPosition > 0) {
-                    scrollPosition -= cardWidth;
-                    $("#carouselExampleControls .carousel-inner").animate(
-                        { scrollLeft: scrollPosition },
-                        600
-                    );
-                }
-            });
-        } else {
-            $(multipleCardCarousel).addClass("slide");
-        }
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            //>=, not <=
-            if (scroll >= 500) {
-                //clearHeader, not clearheader - caps H
-                $(".navbar-light").addClass("shownav");
-                $(".back-to-top").addClass("shownav");
-
-            }
-            else {
-                $(".navbar-light").removeClass("shownav");
-                $(".back-to-top").removeClass("shownav");
-            }
-            //>=, not <=
-            if (scroll <= 500) {
-                //clearHeader, not clearheader - caps H
-                $(".scroll-to-bottom").addClass("showarrow");
-            }
-            else {
-                $(".scroll-to-bottom").removeClass("showarrow");
-            }
-        }); //missing );
-
-        function loadMore() { var x = document.getElementById("loadmore"); if (x.innerHTML === "Load More") { x.innerHTML = "Load Less" } else { x.innerHTML = "Load More" } }
-
-    </script>
-
-
-
-</body>
-
-
-
-</html>
+            background-color: #020a25;
+        } */
+
+.about_block_2_text {
+    padding: 40px 40px !important;
+
+    color: #fff;
+    background-color: #020a25;
+}
+
+.learn_block_text {
+    padding: 2em;
+    font-family: Raleway, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+    background-color: #212937;
+    border-left: 6px solid #b2b2c2;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.learn_block_text h4 {
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about_block_2 h4 {
+    padding: 2em;
+    font-family: Raleway, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.about_block_2_text p {
+    font-size: 17px !important;
+    text-align: justify;
+}
+
+.accordion-body {
+    font-family: DM Sans, sans-serif;
+}
+
+.about_block_2_text a {
+    margin-left: 65px;
+
+}
+
+.gr_2 {
+    background: linear-gradient(90deg, #52E5FC 17.14%, #02C77B 63.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.learn_block_img img {
+    width: 83%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.about_block_2_img img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.about_block_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_block {
+    background-image: linear-gradient(#150b48, #0756db);
+}
+
+.padding_only {
+    padding-left: 6em;
+    padding-right: 6em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.btn--ter-sm {
+    color: #02c77b;
+    text-align: center;
+    background-color: #e7fef8;
+    border: 2px solid #02c77b;
+    border-radius: 12rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all .6s cubic-bezier(.23, 1, .32, 1);
+    box-shadow: 0 0 0 0 #92b22f;
+}
+
+.btn--ter-sm:hover {
+    box-shadow: none;
+    color: #fff;
+    background-color: #02c77b;
+}
+
+.about_block_text {
+    color: #fff !important;
+}
+
+.about_block_2_text h4 {
+    padding: 0px;
+}
+
+.footer {
+    background-color: #212937;
+}
+
+.footer {
+    color: #fff !important;
+    font-family: Raleway, sans-serif;
+}
+
+.footer a {
+    color: #02c77b !important;
+}
+
+.bottom_block p {
+    font-size: 14px
+}
+
+.is-h2 {
+    font-family: Raleway, sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+
+.is-h6 {
+    font-family: Raleway, sans-serif;
+    font-size: 0.55em;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.3;
+}
+
+.top_block p {
+    font-size: 15px;
+}
+
+.footer_logo img {
+    width: 10%;
+    margin-bottom: 40px;
+}
+
+.social_media_icons {
+    display: flex;
+    float: right;
+}
+
+.accordion-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+
+}
+
+.accordion-button {
+    border: 1px solid gray !important;
+    border-radius: 10px;
+
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    border-bottom: 0px !important;
+    box-shadow: none !important;
+}
+
+.footer_icon_block {
+
+    color: #fff;
+    display: inline;
+    text-align: center;
+    margin: 5px !important;
+    padding: 4px 11px;
+    border-radius: 7px
+}
+
+.footer_icon_block .fa {
+    padding: 2px 0;
+    color: #fff !important;
+    font-size: 23px
+}
+
+.footer_icon_block.row.col-md-2 {
+    display: contents
+}
+
+.card {
+    margin: 0 auto;
+    border: none;
+}
+
+.card .carousel-item {
+    min-height: 350px;
+}
+
+.card .carousel-caption {
+    padding: 0;
+    right: 15px;
+    left: 15px;
+    top: 15px;
+    color: #3d3d3d;
+    border: 1px solid #ccc;
+    min-height: 250px;
+    padding: 15px;
+}
+
+.card .carousel-caption .col-sm-3 {
+    display: flex;
+    align-items: center;
+}
+
+.card .carousel-caption .col-sm-9 {
+    text-align: left;
+}
+
+.card .carousel-control-prev,
+.card .carousel-control-next {
+    color: #3d3d3d !important;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    color: #fff;
+    font-size: 14px;
+    background-color: #150b48;
+
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 0.85;
+}
+
+.carousel-control-prev {
+    left: 1%;
+    top: 78%;
+    z-index: 999;
+}
+
+.carousel-control-next {
+    right: 0%;
+    top: 78%;
+    z-index: 999;
+}
+
+.midline {
+    width: 60px;
+    border-top: 1px solid #d43025;
+}
+
+.carousel-caption h2 {
+    font-size: 14px;
+}
+
+.carousel-caption h2 span {
+    color: #cd3a54;
+}
+
+
+.rns_logo {
+    width: 15%;
+}
+
+.accd_style {
+    margin-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 40px;
+}
+
+.mini_blocks {
+    text-align: center;
+    background-color: #020a25 !important;
+    padding: 40px 20px 40px 20px;
+    margin: 20px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
+
+}
+
+.mini_blocks p {
+    color: #fff;
+    font-family: Raleway, sans-serif;
+}
+
+.align_rows {
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.footer_content {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #0f131c;
+}
+
+.footer_content p {
+    margin-bottom: 0px !important;
+    text-align: left;
+}
+
+.content_number {
+    font-size: 20px !important;
+}
+
+.copy_write {
+    text-align: center;
+}
+
+.footer_bg_logo {
+    width: 13.56em;
+    height: 100%;
+    opacity: .1;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    top: -3em;
+    bottom: auto;
+    left: auto;
+    right: -4vw;
+}
+
+.footer_alignment {
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.small,
+small {
+    font-family: DM Sans, sans-serif;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card .carousel-caption {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px #150b482e;
+}
+
+.is-h2 {
+    font-family: Raleway, sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.testimonial-icon {
+    width: 2em;
+}
+
+.carousel-caption {
+    text-align: left;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.courses_heading p {
+    font-size: 16px;
+    color: #051a2d !important;
+}
+
+.course_img {
+    background-color: rgb(143 185 235 / 32%);
+}
+
+
+.courses_conatiner_block .col-md-4 {
+    flex: 0 0 auto;
+    width: 31.333333% !important;
+    margin-left: 22px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .23), 0 3px 6px 0 rgba(0, 0, 0, .16);
+    padding-bottom: 20px;
+    border: 1px solid #02c77b;
+    border-radius: 10px;
+}
+
+
+.rating {
+    text-align: left;
+}
+
+.course_content img {
+    background-color: transparent;
+    padding-right: 5px;
+}
+
+.course_img img {
+    text-align: center !important;
+}
+
+.courses_heading p {
+    font-size: 16px;
+    text-align: center !important;
+    color: #051a2d !important;
+}
+
+.a_tag {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.button_learn_more {
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    fill: #FFF;
+    color: #FFF;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #1F4262 21%, #0A467D 100%);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 7px 20px -1px rgba(0, 0, 0, .31);
+    padding: 17px 0 17px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.course_img img {
+    width: 40%;
+    padding: 0px !important;
+    margin-bottom: 20px;
+}
+
+.course_heading h6 {
+    color: #051A2D;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.3em;
+}
+
+.course_img p {
+    padding: 10px 0;
+    text-align: center;
+    padding-bottom: 0;
+    color: #212937ff !important;
+    font-family: "Poppins", Sans-serif !important;
+    margin: 0 15px;
+}
+
+.about_us_section {
+    background-color: #020a25;
+    border-radius: 20px;
+}
+
+.course_rating {
+    padding: 10px 0 10px 0;
+}
+
+.course_img img {
+    width: 40%;
+    padding: 0px !important;
+    margin-bottom: 20px;
+}
+
+.courses_block {
+    font-family: "Poppins", Sans-serif;
+    background-color: #fff;
+    text-align: center;
+    color: #051A2D;
+}
+
+.course_heading h6 {
+    color: #051A2D;
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.3em;
+}
+
+.padding-top_40 {
+    padding-top: 40px;
+}
+
+.testimonial-slider {
+    background-color: #212937;
+
+}
+
+.testimonial-title {
+    color: #fff;
+}
+
+.testimonial-title h2 {
+    padding-left: 0.2em;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+
+}
+
+.card-body {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #02c77b;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 381%;
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    display: none;
+}
+
+.align-items-center {
+    align-items: center !important;
+    justify-content: center;
+}
+
+.padding_classes {
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.container-col-12 {
+    width: 100%;
+    max-width: 1416px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6em;
+    padding-right: 6em;
+    display: block;
+}
+
+.main_footer {
+    background-color: #212937;
+}
+
+.main_footer_1 {
+    background-color: #0f131c;
+}
+
+.footer_content p {
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.dsg-navbar {
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.gr_3 {
+    background: linear-gradient(90deg, #020a25 17.14%, #1313f7 63.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.course_content p {
+    font-family: DM Sans, sans-serif;
+    margin-bottom: 10px !important;
+    font-size: 16px;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .genealogy-tree li {
+        padding: 20px 0px 0 0px !important;
+    }
+
+    .courses_conatiner_block .col-md-4 {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .carousel-caption {
+        position: relative;
+    }
+
+    .rns_logo {
+        width: 25%;
+    }
+
+    .genealogy-tree li {
+        float: none;
+    }
+
+    .card .carousel-caption {
+        left: 0;
+        top: 0;
+        margin-bottom: 15px;
+    }
+
+    .card .carousel-caption img {
+        margin: 0 auto;
+    }
+
+    .card .carousel-caption h3,
+    .card .carousel-caption small {
+        text-align: center;
+    }
+
+    .carousel-control-prev {
+        left: 35%;
+        top: 105%;
+    }
+
+    .carousel-control-next {
+        right: 35%;
+        top: 105%;
+    }
+
+    .btn-nav-link {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .login_btn {
+        border-radius: 0px;
+        margin-top: 10px;
+    }
+
+    .rns_logo {
+        margin-left: 20px;
+    }
+
+    .hero_cta-wrap {
+        display: block;
+    }
+
+    .mobile_gap {
+        margin-top: 60px;
+    }
+
+    .courses_conatiner_block .col-md-4 {
+        width: 90% !important;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+
+    }
+
+    .coures_main_block {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .learn_block_text {
+        border-radius: 0px !important;
+        border-left: 0px;
+    }
+
+    .learn_block_img img {
+        border-radius: 0px !important;
+    }
+
+    .accd_style {
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .footer_content {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .copy_write {
+        text-align: left;
+    }
+
+    .footer_bg_logo {
+        right: 0
+    }
+
+    .footer_alignment {
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+    .footer_logo img {
+        width: 20%;
+
+    }
+
+    .genealogy-tree ul {
+        display: block;
+    }
+
+    .genealogy-tree li::after {
+        display: none;
+    }
+
+    .genealogy-tree ul ul::before {
+        height: 100px;
+    }
+
+
+    .genealogy-tree li::before {
+
+        border-top: 0px;
+    }
+
+    .about_block_2_img img {
+        display: block;
+        width: 60%
+    }
+
+    .padding_only {
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+
+    .learn_block_text h4 {
+        padding: 1em;
+    }
+
+    .carousel-inner {
+        padding: 1em;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 1;
+        position: absolute;
+        left: 1em;
+        top: 127%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-control-next {
+        left: 5em;
+    }
+
+    .btn-nav-link {
+        margin-bottom: 20px;
+    }
+
+    .container-col-12 {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .padding_rt a {
+
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card .carousel-caption h3 {
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .solution_block {
+        display: block;
+    }
+
+    .btn-nav-link {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .login_btn {
+        border-radius: 0px;
+        margin-top: 10px;
+    }
+
+    .rns_logo {
+        margin-left: 20px;
+    }
+
+    .genealogy-tree li {
+        padding: 20px 0px 0 0px !important;
+    }
+
+    .rns_logo {
+        width: 15%;
+    }
+
+}
+
+
+
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 48%;
+        display: block;
+    }
+
+    .carousel-inner {
+        display: flex;
+        display: flex;
+        align-items: center;
+        JUSTIFY-CONTENT: center;
+    }
+}
