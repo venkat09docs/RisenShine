@@ -1269,7 +1269,7 @@ small {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    top: 381%;
+    top: 300%;
     opacity: 1;
     transform: translateY(-50%);
 }
