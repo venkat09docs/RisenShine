@@ -2,8 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:wght@800&display=swap');
 
 /*----------------genealogy-scroll----------*/
+
 .solution_block {
     display: flex;
+}
+
+.ts_heading {
+    text-align: center;
+    color: #000135;
+    font-family: DM Sans, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
 }
 
 .banner_card {
@@ -974,7 +983,7 @@ a {
 }
 
 .carousel-control-prev {
-    left: 1%;
+    left: 13%;
     top: 78%;
     z-index: 999;
 }
@@ -1233,10 +1242,6 @@ small {
     padding-top: 40px;
 }
 
-.testimonial-slider {
-    background-color: #212937;
-
-}
 
 .testimonial-title {
     color: #fff;
@@ -1269,9 +1274,7 @@ small {
     transform: translateY(-50%);
 }
 
-.carousel-control-prev {
-    display: none;
-}
+
 
 .align-items-center {
     align-items: center !important;
@@ -1562,8 +1565,10 @@ small {
 @media (min-width: 576px) {
     .carousel-item {
         margin-right: 0;
-        flex: 0 0 48%;
-        display: block;
+        flex: 0 0 50%;
+        border-radius: 20px;
+        border: 4px solid #70bba7;
+
     }
 
     .carousel-inner {
