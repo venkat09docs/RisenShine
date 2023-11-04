@@ -630,14 +630,15 @@
     <!-- Testimonial Block -->
     <div class="is-pad-t-64"></div>
     <div class="testimonial-slider">
-        <div class="is-pad-t-64"></div>
         <div id="carouselExampleControls" class="carousel carousel-dark">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="testimonial-title">
                             <i class="bi bi-quote display-1"></i>
-                            <h2 class="fw-bold display-6" style="text-align: center;">Testimonials</h2>
+                            <h2 class="fw-bold display-6 ts_heading">
+                                Testimonials
+                            </h2>
                         </div>
                         <button class="carousel-control-prev" id="classShow" type="button"
                             data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -805,9 +806,7 @@
 
     <script>
 
-        function showLeft() {
-            document.getElementById("classShow").style.display = "block";
-        }
+
         var multipleCardCarousel = document.querySelector("#carouselExampleControls");
 
         if (window.matchMedia("(min-width: 576px)").matches) {
@@ -820,19 +819,19 @@
             $("#carouselExampleControls .carousel-control-next").on("click", function () {
                 if (scrollPosition < carouselWidth - cardWidth * 2) {
                     scrollPosition += cardWidth;
-                    $("#carouselExampleControls .carousel-inner").animate(
-                        { scrollLeft: scrollPosition },
-                        600
-                    );
+                    // $("#carouselExampleControls .carousel-inner").animate(
+                    //     { scrollLeft: scrollPosition },
+                    //     600
+                    // );
                 }
             });
             $("#carouselExampleControls .carousel-control-prev").on("click", function () {
                 if (scrollPosition > 0) {
                     scrollPosition -= cardWidth;
-                    $("#carouselExampleControls .carousel-inner").animate(
-                        { scrollLeft: scrollPosition },
-                        600
-                    );
+                    // $("#carouselExampleControls .carousel-inner").animate(
+                    //     { scrollLeft: scrollPosition },
+                    //     600
+                    // );
                 }
             });
         } else {
