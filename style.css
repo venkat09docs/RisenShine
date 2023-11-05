@@ -1263,6 +1263,21 @@ small {
     border-radius: 20px;
 }
 
+.role_height {
+
+    height: 126px;
+}
+
+.lp_height {
+
+    height: 132px;
+}
+
+.bonus_height {
+
+    height: 199px;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     background-color: #02c77b;
