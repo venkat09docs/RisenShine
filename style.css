@@ -3,8 +3,32 @@
 
 /*----------------genealogy-scroll----------*/
 
+.certificate_section {
+    text-align: center;
+    padding: 40px 10px;
+    margin-top: 40px;
+    border: 1px solid #666;
+    border-radius: 25px;
+}
+
+.certificate_body img {
+    width: 10%;
+}
+
 .solution_block {
     display: flex;
+}
+
+.certificate_heading {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0px
+}
+
+.body_content {
+    padding: 40px 100px;
 }
 
 .ts_heading {
