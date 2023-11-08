@@ -29,7 +29,13 @@ h4 {
 }
 
 .course_content_blocks_two_heading {
-    font-size: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    background-color: #020928;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px !important;
 
 }
 
@@ -37,20 +43,68 @@ h4 {
     background-color: #02c77b;
     border-radius: 20px;
     padding: 10px 5px;
-    margin-left: -5px;
-    font-size: 14px;
+    padding-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: Raleway, sans-serif;
+    display: inline-block;
     font-weight: 500;
 }
 
 .course_content_blocks_two {
     background-color: #2743a3;
-    padding: 20px 20px;
+    padding: 0px 0px;
     margin: 20px 0px;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
     border-radius: 20px;
     color: #fff;
-    height: 238px;
-    font-family: DM Sans, sans-serif;
+    height: 241px;
+
+}
+
+.cont_p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.arrow-highlight {
+    position: relative;
+    margin: 0 0.5em;
+    padding: 0 0.2em;
+}
+
+.arrow-highlight:before {
+    content: "";
+    z-index: -1;
+    left: -0.5em;
+    top: 0.1em;
+    border-width: 0.5em;
+    border-style: solid;
+    border-color: orange;
+    position: absolute;
+    width: calc(100% - 0.5em);
+    border-left-color: transparent;
+}
+
+.inner_blocking {
+    padding: 0px 60px;
+}
+
+.arrow-highlight:after {
+    content: "";
+    z-index: -1;
+    right: 0;
+    top: 0.1em;
+    border-width: 0.5em;
+    border-style: solid;
+    border-color: orange;
+    position: absolute;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(180deg);
+    transform-origin: center right;
 }
 
 .video_container iframe {
@@ -154,10 +208,26 @@ h4 {
     border-radius: 0px;
 }
 
+.headin_sc {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    background: linear-gradient(120deg, #1b2650 0%, #e4a0a1 100%);
+    background-repeat: no-repeat;
+    background-size: 17% 20%;
+    background-position: 0 39%;
+}
+
+.highlight {
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    border-radius: 6px;
+    padding: 3px 6px;
+}
+
 .banner_content {
     border-radius: 2em;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 4em;
     display: flex;
 }
@@ -921,7 +991,7 @@ a {
 
 .banner_content p {
     color: #fff;
-    text-align: center;
+    text-align: left !important;
     font-size: 17px;
 }
 
