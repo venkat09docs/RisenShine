@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rise `N` Shine Technologies</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="customscript.js"></script>
+    <style>
+        .is-txt-small {
+            font-size: .9rem;
+            line-height: 1.6;
+        }
+
+        .is-txt-white-50 {
+            color: #fff;
+        }
+
+        .is-txt-medium.is-txt-white-50 {
+            font-size: .9rem;
+        }
+
+        .accordion-button {
+            border: 0px !important;
+            background-color: #000;
+            width: 30%;
+
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #000;
+        }
+
+        .accordion-item {
+            margin: 10px 0px;
+            border: 0px;
+            border-bottom: 1px solid #ffffff7a !important;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+        }
+
+        .is-txt-white-125 {
+            color: #b0b0b0;
+        }
+
+        .is-txt-green-100 {
+            color: #02c77b;
+            padding: 20px 20px 0 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+
+        }
+
+        .is-h6 {
+            padding-top: 10px;
+        }
+
+        .accordion-item {
+            border-radius: 0px;
+        }
+
+        .banner_card {
+            border-radius: 0% !important;
+        }
+
+        .tar_img {
+            margin-top: -45px;
+        }
+
+        .container_cls {
+            padding: 0px 270px;
+            background-color: #000;
+
+        }
+
+        .container_cls h2 {
+            max-width: 100%;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            white-space: pre-wrap;
+            word-break: break-word;
+            padding: 3px 2px;
+            font-weight: 400;
+            font-size: 3em;
+            font-weight: inherit;
+            margin: 0px;
+            color: #fff;
+        }
+
+        .welcom_content p {
+            color: rgba(157, 104, 211, 1);
+            border-left: 1px solid #fff;
+            padding-left: 20px;
+        }
+
+        .org_cr {
+            color: rgba(199, 125, 72, 1);
+            font-weight: 600;
+        }
+
+        .blue_cr {
+            color: rgba(94, 135, 201, 1);
+            font-weight: 500;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 0px 20px;
+        }
+
+        .about_me_section p {
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        .pur_clr {
+            font-weight: 600;
+            color: rgba(209, 87, 150, 1);
+        }
+
+        .bullet_points {
+            background-color: rgb(37, 37, 37);
+            padding: 10px 0px;
+            padding-left: 30px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 7px;
+        }
+
+        .bullet_points span {
+            font-size: 16px;
+        }
+
+        .bullet_points_block {
+            padding: 10px 45px;
+        }
+
+        .bullet_points span {
+            padding: 0px 10px;
+        }
+
+        .bullet_points_block ul {
+            background-color: rgb(37, 37, 37);
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+        }
+
+        .bullet_points_block ul li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff !important;
+
+        }
+
+        .ylw_cr {
+            color: rgba(202, 152, 73, 1);
+        }
+
+        .highlights_li li {
+            color: #fff;
+            margin-left: 0px;
+            margin-right: 20px;
+            margin-top: 10px;
+
+        }
+
+        .highlight_main_block {
+            padding: 5px 40px;
+        }
+
+        .transformation_style {
+            border-left: 2px solid #fff;
+            padding-left: 20px;
+            color: rgba(94, 135, 201, 1);
+            margin-left: 40px;
+        }
+
+        .price_cont {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .price_cont strike {
+            color: brown;
+            font-weight: 600;
+        }
+
+        .pur_n_cr {
+            color: rgba(157, 104, 211, 1);
+        }
+
+        .enroll_now_block {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .enroll_btn {
+            font-size: 30px !important;
+        }
+
+        .green_cr {
+            color: rgba(82, 158, 114, 1);
+        }
+
+        .bg-clr {
+            background-color: #000;
+        }
+
+        .white_cr {
+            color: #fff;
+        }
+
+        #course-list {
+            color: #fff;
+        }
+
+        .accordion {
+            background-color: #000 !important;
+        }
+
+        .accordion-button {
+
+            height: 1px !important;
+        }
+
+        .accordion-item {
+
+            background-color: #000;
+        }
+
+        .course_bg {
+            background-color: rgb(73, 47, 100);
+            color: rgba(255, 255, 255, 0.804);
+            padding: 5px;
+            margin-left: 15px;
+            border-radius: 5px;
+        }
+
+        .course_bg.green {
+            background-color: rgb(43, 89, 63);
+
+        }
+
+        .course_cnt {
+            color: rgba(255, 255, 255, 0.282);
+            margin-left: 15px;
+            font-size: 15px;
+        }
+
+        .accordion-button::after {
+            display: none;
+        }
+
+        .course_name_block {
+            background-color: #262626;
+            color: rgb(255 255 255 / 81%);
+            font-size: 14px;
+            padding: 8px;
+        }
+
+        .course_name_block p {
+            margin: 0 !important;
+        }
+
+        .course_img_sec img {
+            width: 100%;
+        }
+
+        .main_course_blokk {
+            border-radius: 10px;
+        }
+
+        .accordion-body {
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1000px) {
+            .container_cls {
+                padding: 0px 40px;
+
+            }
+        }
+
+        @media (max-width: 780px) {
+            .container_cls {
+                padding: 0px 20px;
+
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-clr">
+    <div class="fixed-top bg-light shadow-sm ">
+        <div class="container-col-12">
+            <nav class="navbar navbar-expand-lg  dsg-nav_wrapper ">
+                <a class="navbar-brand col-md-4" href="https://venkat09docs.github.io/risenshine/ ">
+                    <img src="logo.png" class="rns_logo"></img>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+                <div class="collapse navbar-collapse col-md-8 padding_rt" id="navbarCollapse">
+                    <div class="navbar-nav  py-0 padding_rt">
+                        <a href="https://venkat09docs.github.io/risenshine/ " class="nav-item nav-link active">Home</a>
+                        <a href="https://venkat09docs.github.io/risenshine/Diploma_Programs.html"
+                            class="nav-item nav-link">Diploma Program</a>
+                        <a href="https://venkat09docs.github.io/risenshine/Portfolio_Marketing.html"
+                            class="nav-item nav-link">Portfolio Marketing</a>
+                        <a href="https://venkat09docs.github.io/risenshine/DYIJ_Programs.html"
+                            class="nav-item nav-link"><span class="btn-nav-link">👑 DYIJ Programs </span></a>
+                        <a target="_blank" href="https://lhs.risenshinetechnologies.com/web/login"
+                            class="nav-item nav-link "><span class="login_btn btn--prm-sm w-button">Login</span></a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding:0px;text-align: center;">
+        <div class="is-pad-t-64"></div>
+        <div class="banner_card">
+            <div class="banner_content"> </div>
+        </div>
+    </div>
+    <div class="container-col-12" style="padding:0px;text-align: left;background-color: #000 !important;">
+        <div class="container_cls">
+            <img src="target_image.png" width="10%" class="tar_img">
+            <div class="padding-top_40"></div>
+            <h2>Unlock Your DevOps and AWS <br>Mastery in Just 100 Days! - DIY Course</h2>
+            <div class="padding-top_40"></div>
+            <div class="welcom_content">
+                <p>Welcome to Rise n Shine Technologies, where your journey to unparalleled success in DevOps and AWS
+                    begins. Are you ready to transform your career and skyrocket your earning potential?
+                </p>
+            </div>
+            <div class="padding-top_40"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="org_cr" style="font-size: 30px;"><img src="search_icon.png" width="10%">Why Choose Rise n
+                        Shine's 100 Days Plan?
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="blue_cr">
+                        In just 100 days, we're not just offering a program; we're providing a blueprint for your
+                        professional evolution. Imagine wielding the power of DevOps and AWS expertise, commanding
+                        top-tier salaries, and enjoying career advancements that once seemed out of reach.
+                    </p>
+                </div>
+            </div>
+            <div class="padding-top_40"></div>
+            <p class="blue_cr">
+                This roadmap contains 8 Courses with 35 Topics that can be completed within 14 weeks, whether you are a
+                fresher in the field or an experienced professional who wants to learn DevOps with AWS.
+            </p>
+            <div class="is-pad-t-64"></div>
+            <div class="about-section">
+                <div class="row">
+                    <div class="col-md-4 about_me_img   padding-top_10">
+                        <img src="profile_img.png">
+                    </div>
+                    <div class="col-md-8 about_block_2_img padding-top_10 about_me_section">
+                        <h5 class="about_heading" style="padding-bottom:0px;">
+                            <span class="gr_3"> About Me.</span>
+                        </h5>
+                        <p>I'm Venkat, and I've spent more than <b>17 years in the IT industry</b>, gaining valuable
+                            insights and expertise.</p>
+                        <p>With over 12 years of training experience, I've had the privilege of guiding and mentoring
+                            over <b>7000 software engineers</b>.
+                        </p>
+                        <p><b>My mission is simple:</b></br>
+                            I'm dedicated to empowering IT freshers and professionals like you to
+                            secure
+                            high-paying jobs and salary hikes. Together, we'll leverage your professional skills and
+                            portfolio
+                            in DevOps, AWS Cloud, Kubernetes, Python, AI, and Machine Learning to build your wealth
+                            in the tech world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="is-pad-t-64"></div>
+            <p class="pur_clr" style="font-size: 30px;"> <img src="target_image.png" width="10%"> What to Expect in the
+                Next 100
+                Days:</p>
+            <div class="padding-top_10"></div>
+            <div class="row">
+                <div class="col-md-6 bullet_points_block">
+                    <p class="bullet_points"><img src="idea_png.png" width="6%"> <span>Linux Admin for Cloud
+                            Engineers</span></p>
+                    <p class="bullet_points"><img src="idea_png.png" width="6%"> <span>AWS Associate Engineer</span></p>
+                    <p class="bullet_points"><img src="idea_png.png" width="6%"> <span>Docker Containers</span></p>
+                    <p class="bullet_points"><img src="idea_png.png" width="6%"> <span>COE - Kubernetes</span></p>
+                    <p class="bullet_points"><img src="idea_png.png" width="6%"> <span>Python Scripting</span></p>
+                </div>
+                <div class="col-md-6 bullet_points_block">
+                    <p class="bullet_points"><img src="idea_png.png" width="6%"> <span>Shell Scripting</span></p>
+                    <div class="bullet_points">
+                        <p><img src="idea_png.png" width="6%"> <span>DevOps Tools</span>
+                        <ol>
+                            <li> Git and GitHub</li>
+                            <li> Terraform</li>
+                            <li> Maven Build Tool</li>
+                            <li> Tomcat App Server</li>
+                            <li> Nexus Server</li>
+                            <li> Ansible</li>
+                            <li> Nagios Monitoring Tool</li>
+                        </ol>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="is-pad-t-64"></div>
+            <div class="row highlight_main_block">
+                <p class="blue_cr"><u>Highlights of Course</u></p>
+                <div class="col-md-6 highlights_li">
+                    <ul>
+                        <li> You can <span class="pur_n_cr">Start the course immediately</span></li>
+                        <li> Step by Step Process explained from Scratch to Mastery Level</li>
+                        <li> <span class="org_cr">1 Year access</span> to recordings</li>
+                        <li> Lab Guides, Assignments, Topic wise Resources</li>
+                        <li> Build <span class="blue_cr">Your Resume with strong</span> AWS and DevOps <span
+                                class="blue_cr">skillset.</span></li>
+                        <li> <span style="color: rgba(223, 84, 82, 1);">Hurry, Limited Offer only.</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 highlights_li">
+                    <ul>
+                        <li> Doubt + Interaction Sessions on Every <span class="pur_clr">Wed @7:30 PM Lifetime
+                                Access.</span></li>
+                        <li> <span class="org_cr">Support Call</span> Everyday <span class="org_cr">8am to 9am</span> on
+                            Weekdays</li>
+                        <li> 200+ Hours of Recorded sessions</li>
+                        <li> Closed community of professionals with same mindset</li>
+                        <li> Complete <span class="ylw_cr">end to end DevOps Process</span> implemented using Terraform
+                            (IAC), Jenkins (PAC) Models.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="is-pad-t-64"></div>
+            <p class="pur_n_cr" style="font-size: 30px;"><img src="idea_png.png" width="6%"> <span> Why Wait? Start Your
+                    100-Day
+                    Transformation Now!</span></p>
+            <div class="padding-top_40"></div>
+            <p class="transformation_style pur_n_cr">
+                Seize the opportunity to accelerate your career, command top salaries, and join the league of DevOps and
+                AWS experts. The next 100 days could redefine your professional journey. Let's Rise n Shine together!
+            </p>
+
+            <div class="padding-top_40"></div>
+            <p class="pur_n_cr" style="font-size: 30px;"><img src="star_icon.png" width="4%"> <span> Get Started
+                    Today!</span></p>
+            <div class="padding-top_40"></div>
+            <div class="row price_cont">
+                <div class="col-md-6">
+                    <p><strike>₹25000</strike><br>₹6250</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p><strike>$300</strike><br>$75</p>
+
+                </div>
+            </div>
+            <div class="padding-top_40"></div>
+            <div class="enroll_now_block">
+                <p class="blue_cr enroll_btn"><a target="_blank"
+                        href="https://lhs.risenshinetechnologies.com/web/checkout/65034cbc1cec1b581b25ec42"><u> Enroll
+                            Course </u></a></p>
+                <p> Get 75% OFF, use Coupon code: <span class="org_cr">100DAYS</span> (This is limited offer only,
+                    price will rise soon.)</p>
+                <p> <span class="org_cr">For More Details:</span> <span class="green_cr">Phone / WhatsApp -
+                        8686988042</span></p>
+            </div>
+            <div class="is-pad-t-64"></div>
+            <!-- Pending Block -->
+            <div class="container">
+                <p class="white_cr"><i class="fa fa-cubes" aria-hidden="true"></i> Learning Path - courses</p>
+                <div class="padding-top_10"></div>
+                <div class="accordion" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingOne">
+
+                            <button class="accordion-button faq_text is-h6" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-play" aria-hidden="true"></i> <span class="course_bg">Courses
+                                </span> <span class="course_cnt">8</span>
+                            </button>
+                        </h4>
+                        <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row ">
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/6505486d9372a310710c4253">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_LinuxAdmin.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p><i class="fa fa-file-code-o" aria-hidden="true"></i> Linux Admin for
+                                                    Cloud Engineer</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/6505486d9372a310710c4253">
+                                            <div class="course_img_sec">
+                                                <img src="ShellScripting.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p>Shell Scripting</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="padding-top_10"></div>
+                                <div class="row ">
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/650a8f0761a1deed5b0ab941">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_AWSEngineer.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> AWS Associate Engineer</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/654e70b1b801ff0bb5e40d63">
+                                            <div class="course_img_sec">
+                                                <img src="Course_Images_png.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> Git & GitHub</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="padding-top_10"></div>
+                                <div class="row ">
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/65454dad1f0c5fabc8e61fc5">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_IAC_Terraform.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> IAC - Terraform
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/65454b411f0c5fabc8e5e9e3">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_DevOps_Tools.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> DevOps Tools
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="padding-top_10"></div>
+                                <div class="row ">
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/65454c4a1f0c5fabc8e6016e">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_DockerK8s.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> Docker &
+                                                    Kubernetes</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/65454e021f0c5fabc8e625cb">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_CI_Server.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> CI Server -
+                                                    Jenkins</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="headingOne">
+                            <button class="accordion-button faq_text is-h6" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                                <i class="fa fa-play" aria-hidden="true"></i> <span class="course_bg green">Assignments
+                                </span> <span class="course_cnt">3</span>
+                            </button>
+                        </h4>
+                        <div id="collapsetwo" class="accordion-collapse collapse  " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row ">
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/65454e9d1f0c5fabc8e6331d">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_Linux_Assignment.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> Linux Admin -
+                                                    Assignment</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/65454edb1f0c5fabc8e635d4">
+                                            <div class="course_img_sec">
+                                                <img src="DWA_Shell_Script_Assignment.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p>Shell Script - Assignment</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="padding-top_10"></div>
+                                <div class="row ">
+                                    <div class="col-md-6 main_course_blokk">
+                                        <a target="_blank"
+                                            href="https://lhs.risenshinetechnologies.com/web/courses/details/654f3525b801ff0bb5fb4167">
+                                            <div class="course_img_sec">
+                                                <img src="AWS_assignment.png">
+                                            </div>
+                                            <div class="course_name_block">
+                                                <p> AWS Assignment</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="is-pad-t-64"></div>
+            <!-- Pending Course Block -->
+            <h3 style="color:rgba(255, 255, 255, 0.81);font-size: 2em;">And..no..you will not see here that
+                so-called
+                testimonials</h3>
+            <div class="padding-top_10"></div>
+            <p class="bullet_points" style="display: flex;"><img src="idea_png.png" width="6%"> <span>Just because who
+                    bought this Course has
+                    his or her hands FULL with it... They are working for their dream!</span></p>
+            <div class="padding-top_10"></div>
+            <p class="bullet_points" style="display: flex;"><img src="idea_png.png" width="6%"> <span>And also because
+                    we don't have time to
+                    write "testimonials"...we are busy enriching this Course...so keep in touch for updates!</span></p>
+            <div class="padding-top_40"></div>
+        </div>
+    </div>
+    <div class="main_footer">
+        <div class="container-col-12 footer_alignment padding_classes" style="background-color: #212937;">
+            <div class="footer">
+                <div class="top_block" style="padding-top:40px;">
+                    <div class="row">
+                        <div class="col-md-8 footer_logo">
+                            <img src="logo.png"></img>
+                            <br>
+                            <h3 class="heading_h3">Download App <span class="text-span ">(iOS Coming Soon)</span>
+                            </h3>
+                            <div class="padding-top"></div>
+                            <a target="_blank"
+                                href="https://play.google.com/store/apps/details?id=com.tagmango.risenshine&pcampaignid=web_share"
+                                class="media_icons"><img src="google_play.png" loading="lazy" alt=""
+                                    class="footer_app-img"></a>
+                            <a target="_blank" href="#" class="media_icons reduce"><img src="app_store.png"
+                                    loading="lazy" alt=""></a>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                Need any Help?
+                            </p>
+                            <p>
+                                <a href="mailto: risenshinetech@gmail.com"> risenshinetech@gmail.com</a>
+                            </p>
+                            <p class="padding-top_10">
+                                For further information please visit:</p>
+                            <p>
+                                <a href="https://risenshinetechnologies.com/privacy-policy-2/" target="_blank">PRIVACY
+                                    POLICY</a> | <a href="https://risenshinetechnologies.com/terms-conditions/"
+                                    target="_blank">
+                                    TERMS & CONDITIONS
+                                </a>
+                            </p>
+                            <p class="padding-top_10">
+                                We would love you hear from you!
+
+                            </p>
+                            <p>
+                                <a href="#" target="_blank">Feedback
+                                </a>
+                            </p>
+                            <img src="logo.png" class="footer_bg_logo"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main_footer_1">
+        <div class="container-col-12 footer_content">
+            <div class="bottom_block">
+                <div class="row ">
+                    <div class="col-md-4">
+                        <p> © 2023 RNS. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="social_media_icons">
+                            <p class="footer_icon_block"><a class="a_tag_black"
+                                    href="https://www.instagram.com/risenshinetechnologies" target="_blank"><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a></p>
+                            <p class="footer_icon_block" style="margin-left:0px;"><a class="a_tag_black" target="_blank"
+                                    href="https://www.facebook.com/RiseNShineTechnologies//"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a></p>
+                            <p class="footer_icon_block"><a class="a_tag_black" target="_blank"
+                                    href="https://www.youtube.com/@devopswithcloudandAI"><i class="fa fa-youtube-play"
+                                        aria-hidden="true"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+
+
+
+        function showLeft() {
+            document.getElementById("classShow").style.display = "block";
+        }
+        var multipleCardCarousel = document.querySelector("#carouselExampleControls");
+
+        if (window.matchMedia("(min-width: 576px)").matches) {
+            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                interval: false
+            });
+            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+            var cardWidth = $(".carousel-item").width();
+            var scrollPosition = 0;
+            $("#carouselExampleControls .carousel-control-next").on("click", function () {
+                if (scrollPosition < carouselWidth - cardWidth * 2) {
+                    scrollPosition += cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+            $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+                if (scrollPosition > 0) {
+                    scrollPosition -= cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+        } else {
+            $(multipleCardCarousel).addClass("slide");
+        }
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            //>=, not <=
+            if (scroll >= 500) {
+                //clearHeader, not clearheader - caps H
+                $(".navbar-light").addClass("shownav");
+                $(".back-to-top").addClass("shownav");
+
+            }
+            else {
+                $(".navbar-light").removeClass("shownav");
+                $(".back-to-top").removeClass("shownav");
+            }
+            //>=, not <=
+            if (scroll <= 500) {
+                //clearHeader, not clearheader - caps H
+                $(".scroll-to-bottom").addClass("showarrow");
+            }
+            else {
+                $(".scroll-to-bottom").removeClass("showarrow");
+            }
+        }); //missing );
+
+        function loadMore() { var x = document.getElementById("loadmore"); if (x.innerHTML === "Load More") { x.innerHTML = "Load Less" } else { x.innerHTML = "Load More" } }
+
+    </script>
+</body>
+
+</html>
